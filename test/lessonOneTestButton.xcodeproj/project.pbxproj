@@ -14,9 +14,8 @@
 		A1ABED661F55BB9400BF4428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ABED641F55BB9400BF4428 /* LaunchScreen.storyboard */; };
 		A1ABED711F55BB9400BF4428 /* _234testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABED701F55BB9400BF4428 /* _234testTests.swift */; };
 		A1ABED7C1F55BB9400BF4428 /* _234testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABED7B1F55BB9400BF4428 /* _234testUITests.swift */; };
-		A1CE70C81F582DFE009CF6D8 /* Forever-Alone-Transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = A1CE70C71F582DFE009CF6D8 /* Forever-Alone-Transparent.png */; };
-		A1CE70CA1F582ED8009CF6D8 /* 8118891.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1CE70C91F582ED8009CF6D8 /* 8118891.jpg */; };
-		A1CE70CC1F5830FF009CF6D8 /* psibat_happy-face.png in Resources */ = {isa = PBXBuildFile; fileRef = A1CE70CB1F5830FF009CF6D8 /* psibat_happy-face.png */; };
+		A1FEF7791F5BB4DF00198E22 /* module.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FEF7781F5BB4DF00198E22 /* module.swift */; };
+		A1FEF77B1F5BB55600198E22 /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FEF77A1F5BB55600198E22 /* viewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +49,8 @@
 		A1ABED771F55BB9400BF4428 /* lessonOneTestButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lessonOneTestButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ABED7B1F55BB9400BF4428 /* _234testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _234testUITests.swift; sourceTree = "<group>"; };
 		A1ABED7D1F55BB9400BF4428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1CE70C71F582DFE009CF6D8 /* Forever-Alone-Transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Forever-Alone-Transparent.png"; path = "../../../../Desktop/Forever-Alone-Transparent.png"; sourceTree = "<group>"; };
-		A1CE70C91F582ED8009CF6D8 /* 8118891.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 8118891.jpg; path = ../../../../Desktop/8118891.jpg; sourceTree = "<group>"; };
-		A1CE70CB1F5830FF009CF6D8 /* psibat_happy-face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "psibat_happy-face.png"; path = "../../../../Desktop/psibat_happy-face.png"; sourceTree = "<group>"; };
+		A1FEF7781F5BB4DF00198E22 /* module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = module.swift; sourceTree = "<group>"; };
+		A1FEF77A1F5BB55600198E22 /* viewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +104,10 @@
 				A1ABED5B1F55BB9400BF4428 /* AppDelegate.swift */,
 				A1ABED5D1F55BB9400BF4428 /* ViewController.swift */,
 				A1ABED5F1F55BB9400BF4428 /* Main.storyboard */,
+				A1FEF7781F5BB4DF00198E22 /* module.swift */,
 				A1ABED621F55BB9400BF4428 /* Assets.xcassets */,
+				A1FEF77A1F5BB55600198E22 /* viewModel.swift */,
 				A1ABED641F55BB9400BF4428 /* LaunchScreen.storyboard */,
-				A1CE70C71F582DFE009CF6D8 /* Forever-Alone-Transparent.png */,
-				A1CE70CB1F5830FF009CF6D8 /* psibat_happy-face.png */,
-				A1CE70C91F582ED8009CF6D8 /* 8118891.jpg */,
 				A1ABED671F55BB9400BF4428 /* Info.plist */,
 			);
 			path = 1234test;
@@ -242,11 +239,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1CE70C81F582DFE009CF6D8 /* Forever-Alone-Transparent.png in Resources */,
 				A1ABED661F55BB9400BF4428 /* LaunchScreen.storyboard in Resources */,
-				A1CE70CC1F5830FF009CF6D8 /* psibat_happy-face.png in Resources */,
 				A1ABED631F55BB9400BF4428 /* Assets.xcassets in Resources */,
-				A1CE70CA1F582ED8009CF6D8 /* 8118891.jpg in Resources */,
 				A1ABED611F55BB9400BF4428 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1FEF7791F5BB4DF00198E22 /* module.swift in Sources */,
 				A1ABED5E1F55BB9400BF4428 /* ViewController.swift in Sources */,
+				A1FEF77B1F5BB55600198E22 /* viewModel.swift in Sources */,
 				A1ABED5C1F55BB9400BF4428 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

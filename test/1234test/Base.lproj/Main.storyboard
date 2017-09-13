@@ -53,10 +53,6 @@
                                     <action selector="resetbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gL-qf-n6C"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="8118891.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0A2-BS-H6B">
-                                <rect key="frame" x="16" y="365" width="343" height="282"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,7 +68,4 @@
             <point key="canvasLocation" x="32.799999999999997" y="133.5832083958021"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="8118891.jpg" width="2031" height="2031"/>
-    </resources>
 </document>
