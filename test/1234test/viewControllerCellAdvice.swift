@@ -12,6 +12,14 @@ class   ViewControllerThree : UIViewController, UITableViewDelegate,UITableViewD
    var adviceArray = adviceShare.sharedAdvice.share
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        adviceArray = adviceShare.sharedAdvice.share
+        tableView.reloadData()
+    }
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
