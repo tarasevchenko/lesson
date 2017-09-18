@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhT-Kn-Hdw">
-                                <rect key="frame" x="165" y="191" width="46" height="30"/>
+                                <rect key="frame" x="165" y="40" width="46" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="KWc-Uo-T6j"/>
                                 </constraints>
@@ -62,7 +62,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="idE-f8-T4H" firstAttribute="top" secondItem="dhT-Kn-Hdw" secondAttribute="bottom" constant="92" id="KcD-qy-VXv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="idE-f8-T4H" secondAttribute="bottom" constant="239" id="L7h-8U-tmt"/>
                             <constraint firstItem="dhT-Kn-Hdw" firstAttribute="centerX" secondItem="fKz-tf-4Tl" secondAttribute="centerX" id="Qy1-N5-61Q"/>
                             <constraint firstItem="fKz-tf-4Tl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="SiP-6Y-cM2"/>
@@ -70,7 +69,7 @@
                             <constraint firstItem="idE-f8-T4H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="48" id="WWf-lV-HTG"/>
                             <constraint firstItem="idE-f8-T4H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l9n-ew-lnN"/>
                             <constraint firstItem="fKz-tf-4Tl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="92" id="xxY-zB-YDH"/>
-                            <constraint firstItem="dhT-Kn-Hdw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="171" id="zZX-yK-iaM"/>
+                            <constraint firstItem="dhT-Kn-Hdw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="zZX-yK-iaM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="wQ2-GG-xSa"/>
@@ -159,15 +158,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="adviceCell" tableViewCell="w2q-QC-Rfz" id="slI-kF-Fah">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6P-3W-8y8">
-                                                    <rect key="frame" x="166" y="11" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>

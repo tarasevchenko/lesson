@@ -9,24 +9,24 @@
 import Foundation
 import UIKit
 import CoreData
-class adviceShare {
+
+public class adviceShare {
     
     static let sharedAdvice = adviceShare()
     private init (){}
     var share: [NSManagedObject] = []
 }
 
-
-
 class   ViewControllerTwo : UIViewController {
         @IBOutlet weak var labelFromVC1: UILabel!
-    var favouritesAdvice = "ViewControllerTwo"
-    var adviceSave = [String]()
+        var favouritesAdvice = ""
+    var share: [NSManagedObject] = []
     override func viewDidLoad() {
         super.viewDidLoad()
    
     print(favouritesAdvice)
         labelFromVC1.text = favouritesAdvice
+       
 
     }
 
@@ -36,8 +36,30 @@ class   ViewControllerTwo : UIViewController {
 }
     @IBAction func saveAdviceToArray(_ sender: Any) {
      
- adviceShare.sharedAdvice.share.append(favouritesAdvice)
-        print(adviceShare.sharedAdvice.share)
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        
+        let entity = NSEntityDescription.entity(forEntityName: "AdviceStorage", in: managedContext)!
+        
+        let saveAdvice = NSManagedObject(entity: entity, insertInto: managedContext)
+        
+        saveAdvice.setValue(favouritesAdvice, forKeyPath: "advicesText")
+        
+        do {
+            try managedContext.save()
+            adviceShare.sharedAdvice.share.append(saveAdvice)
+            
+            
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    
         
     }
     override func didReceiveMemoryWarning() {

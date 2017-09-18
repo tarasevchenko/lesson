@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10561B81F6FC0B60016E551 /* AdviceStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A10561B61F6FC0B60016E551 /* AdviceStorage.xcdatamodeld */; };
 		A196943E1F67CCFC007343B9 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196943D1F67CCFC007343B9 /* ViewControllerTwo.swift */; };
 		A19694441F68117E007343B9 /* viewControllerCellAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19694431F68117E007343B9 /* viewControllerCellAdvice.swift */; };
 		A1ABED5C1F55BB9400BF4428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ABED5B1F55BB9400BF4428 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A10561B71F6FC0B60016E551 /* AdviceStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AdviceStorage.xcdatamodel; sourceTree = "<group>"; };
 		A196943D1F67CCFC007343B9 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 		A19694431F68117E007343B9 /* viewControllerCellAdvice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewControllerCellAdvice.swift; sourceTree = "<group>"; };
 		A1ABED581F55BB9400BF4428 /* lessonOneTestButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lessonOneTestButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 				A1ABED621F55BB9400BF4428 /* Assets.xcassets */,
 				A1ABED641F55BB9400BF4428 /* LaunchScreen.storyboard */,
 				A1ABED671F55BB9400BF4428 /* Info.plist */,
+				A10561B61F6FC0B60016E551 /* AdviceStorage.xcdatamodeld */,
 			);
 			path = 1234test;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				A196943E1F67CCFC007343B9 /* ViewControllerTwo.swift in Sources */,
 				A1F72B7D1F613944007B3271 /* adviceModel.swift in Sources */,
 				A1ABED5E1F55BB9400BF4428 /* ViewController.swift in Sources */,
+				A10561B81F6FC0B60016E551 /* AdviceStorage.xcdatamodeld in Sources */,
 				A1ABED5C1F55BB9400BF4428 /* AppDelegate.swift in Sources */,
 				A1F72B7F1F613966007B3271 /* adviceService.swift in Sources */,
 			);
@@ -557,6 +561,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A10561B61F6FC0B60016E551 /* AdviceStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A10561B71F6FC0B60016E551 /* AdviceStorage.xcdatamodel */,
+			);
+			currentVersion = A10561B71F6FC0B60016E551 /* AdviceStorage.xcdatamodel */;
+			path = AdviceStorage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A1ABED501F55BB9400BF4428 /* Project object */;
 }

@@ -8,12 +8,12 @@
 
 import Foundation
 import UIKit
-import CoreData
+
 class adviceShare {
     
     static let sharedAdvice = adviceShare()
     private init (){}
-    var share: [NSManagedObject] = []
+    var share = [String]()
 }
 
 

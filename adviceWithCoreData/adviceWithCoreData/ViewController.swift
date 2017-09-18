@@ -5,12 +5,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var adviceLabel: UILabel!
     @IBOutlet weak var adviceButton: UIButton!
+    
     @IBAction func randomButtonAdvice(_ sender: UIButton) {
     let adviceNew = adviceService()
     let adviceRandom = adviceNew.randomAdvice()
     adviceLabel.text = adviceRandom
 
-    
     }
     
     @IBAction func toFavourites(_ sender: UIButton) {
