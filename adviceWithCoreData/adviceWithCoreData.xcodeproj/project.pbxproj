@@ -20,6 +20,7 @@
 		A10561C11F6FCA690016E551 /* adviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561BB1F6FCA690016E551 /* adviceService.swift */; };
 		A10561C31F6FCA690016E551 /* ViewControllerFavoritesAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561BD1F6FCA690016E551 /* ViewControllerFavoritesAdvice.swift */; };
 		A10561C41F6FCA690016E551 /* ViewControllerSaveAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561BE1F6FCA690016E551 /* ViewControllerSaveAdvice.swift */; };
+		A10561C91F70FAD80016E551 /* MyAdviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561C81F70FAD80016E551 /* MyAdviceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A10561BB1F6FCA690016E551 /* adviceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = adviceService.swift; sourceTree = "<group>"; };
 		A10561BD1F6FCA690016E551 /* ViewControllerFavoritesAdvice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerFavoritesAdvice.swift; path = ../ViewControllerFavoritesAdvice.swift; sourceTree = "<group>"; };
 		A10561BE1F6FCA690016E551 /* ViewControllerSaveAdvice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerSaveAdvice.swift; path = ../ViewControllerSaveAdvice.swift; sourceTree = "<group>"; };
+		A10561C81F70FAD80016E551 /* MyAdviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAdviceTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				A10561BE1F6FCA690016E551 /* ViewControllerSaveAdvice.swift */,
 				A10561BD1F6FCA690016E551 /* ViewControllerFavoritesAdvice.swift */,
 				A10561871F6FB7760016E551 /* ViewController.swift */,
+				A10561C81F70FAD80016E551 /* MyAdviceTableViewCell.swift */,
 			);
 			name = viewControllers;
 			path = adviceWithCoreData;
@@ -236,6 +239,7 @@
 				TargetAttributes = {
 					A10561811F6FB7760016E551 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = S4H6P8BNJB;
 						ProvisioningStyle = Automatic;
 					};
 					A10561981F6FB7760016E551 = {
@@ -306,6 +310,7 @@
 				A10561C31F6FCA690016E551 /* ViewControllerFavoritesAdvice.swift in Sources */,
 				A10561881F6FB7760016E551 /* ViewController.swift in Sources */,
 				A10561C41F6FCA690016E551 /* ViewControllerSaveAdvice.swift in Sources */,
+				A10561C91F70FAD80016E551 /* MyAdviceTableViewCell.swift in Sources */,
 				A10561BF1F6FCA690016E551 /* adviceModel.swift in Sources */,
 				A10561861F6FB7760016E551 /* AppDelegate.swift in Sources */,
 				A10561C11F6FCA690016E551 /* adviceService.swift in Sources */,
@@ -463,7 +468,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S4H6P8BNJB;
 				INFOPLIST_FILE = adviceWithCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tarasevchenko.adviceWithCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -475,7 +482,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S4H6P8BNJB;
 				INFOPLIST_FILE = adviceWithCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tarasevchenko.adviceWithCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";

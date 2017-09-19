@@ -10,18 +10,17 @@ import Foundation
 import UIKit
 import CoreData
 class   ViewControllerThree : UIViewController, UITableViewDelegate,UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (adviceShare.sharedAdvice.share.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "adviceCell", for: indexPath) as! MyAdviceTableViewCell
         let adviceSaves = adviceShare.sharedAdvice.share[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "adviceCell", for: indexPath)
-        //UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "adviceCell")
-        
-        cell.textLabel?.text = adviceSaves.value(forKeyPath: "advicesText") as? String
+      
+        cell.myAdviceCell.text = adviceSaves.value(forKeyPath: "advicesText") as? String
         
         return cell
         
