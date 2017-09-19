@@ -14,30 +14,20 @@ class   ViewControllerThree : UIViewController, UITableViewDelegate,UITableViewD
     
     @IBOutlet weak var tableView: UITableView!
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return (adviceShare.sharedAdvice.share.count)
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-    let cell = tableView.dequeueReusableCell(withIdentifier: "adviceCell", for: indexPath) as! MyAdviceTableViewCell
-    let adviceSaves = adviceShare.sharedAdvice.share[indexPath.row]
-    cell.myAdviceCell.text = adviceSaves.value(forKeyPath: "advicesText") as? String
-    return cell
-        
-    }
-        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+   
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+      
+    // фетчинг из БД
         
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
     return
-            }
+     }
     let managedContext = appDelegate.persistentContainer.viewContext
     let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "AdviceStorage")
         do {
@@ -49,6 +39,21 @@ class   ViewControllerThree : UIViewController, UITableViewDelegate,UITableViewD
         
         tableView.reloadData()
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (adviceShare.sharedAdvice.share.count)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "adviceCell", for: indexPath) as! MyAdviceTableViewCell
+        let adviceSaves = adviceShare.sharedAdvice.share[indexPath.row]
+        cell.myAdviceCell.text = adviceSaves.value(forKeyPath: "advicesText") as? String
+        
+        return cell
+        
+    }
+
     //Нажатие на ячейку
     
     func  tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
@@ -57,6 +62,7 @@ class   ViewControllerThree : UIViewController, UITableViewDelegate,UITableViewD
         let adviceAlerts = adviceShare.sharedAdvice.share[indexPath.row]
         let advicesAlert = adviceAlerts.value(forKeyPath: "advicesText") as? String
         viewControllerAlert.alertAdvice = advicesAlert!
+        
         present( viewControllerAlert, animated: true, completion: nil)
         
     }

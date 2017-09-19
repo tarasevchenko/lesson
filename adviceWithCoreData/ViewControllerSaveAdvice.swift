@@ -44,7 +44,6 @@ class   ViewControllerTwo : UIViewController {
         
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        
         let entity = NSEntityDescription.entity(forEntityName: "AdviceStorage", in: managedContext)!
         
         let saveAdvice = NSManagedObject(entity: entity, insertInto: managedContext)
@@ -60,8 +59,8 @@ class   ViewControllerTwo : UIViewController {
             print("Could not save. \(error), \(error.userInfo)")
         }
     
-        
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
