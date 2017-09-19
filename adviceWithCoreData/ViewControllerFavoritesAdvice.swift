@@ -14,23 +14,18 @@ class   ViewControllerThree : UIViewController, UITableViewDelegate,UITableViewD
     
     @IBOutlet weak var tableView: UITableView!
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (adviceShare.sharedAdvice.share.count)
+    return (adviceShare.sharedAdvice.share.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "adviceCell", for: indexPath) as! MyAdviceTableViewCell
-        let adviceSaves = adviceShare.sharedAdvice.share[indexPath.row]
-      
-        cell.myAdviceCell.text = adviceSaves.value(forKeyPath: "advicesText") as? String
-        
-        return cell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "adviceCell", for: indexPath) as! MyAdviceTableViewCell
+    let adviceSaves = adviceShare.sharedAdvice.share[indexPath.row]
+    cell.myAdviceCell.text = adviceSaves.value(forKeyPath: "advicesText") as? String
+    return cell
         
     }
-       
-
         
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -40,31 +35,35 @@ class   ViewControllerThree : UIViewController, UITableViewDelegate,UITableViewD
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
+    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+    return
             }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "AdviceStorage")
+    let managedContext = appDelegate.persistentContainer.viewContext
+    let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "AdviceStorage")
         do {
             adviceShare.sharedAdvice.share = try managedContext.fetch(fetchRequest)
         }
-            
         catch let error as NSError {
         print ("Could not fetch. \(error), \(error.userInfo)")
         }
         
         tableView.reloadData()
     }
-    func  tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let viewControllerAlert = storyboard?.instantiateViewController(withIdentifier: "ViewControllerAlert") as! ViewControllerAlert 
+    //Нажатие на ячейку
     
+    func  tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        
+       let viewControllerAlert = storyboard?.instantiateViewController(withIdentifier: "ViewControllerAlert") as! ViewControllerAlert
+        let adviceAlerts = adviceShare.sharedAdvice.share[indexPath.row]
+        let advicesAlert = adviceAlerts.value(forKeyPath: "advicesText") as? String
+        viewControllerAlert.alertAdvice = advicesAlert!
+        present( viewControllerAlert, animated: true, completion: nil)
+        
     }
     
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
     }
     

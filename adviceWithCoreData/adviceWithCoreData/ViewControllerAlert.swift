@@ -9,10 +9,19 @@
 import UIKit
 
 class ViewControllerAlert: UIViewController {
- var alertAdvice = ""
+    
+    @IBAction func closeAlert(_ sender: Any) {
+            dismiss(animated: true, completion: nil)
+    }
+      var alertAdvice = ""
+
+    @IBOutlet weak var alertAdviceLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+print (alertAdvice)
+        alertAdviceLabel.text = alertAdvice
         // Do any additional setup after loading the view.
     }
 
