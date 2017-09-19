@@ -10,6 +10,8 @@ import UIKit
 
 class MyAdviceTableViewCell: UITableViewCell {
     
+   
+    
     @IBOutlet weak var myAdviceCell: UILabel!
     
     override func awakeFromNib() {
@@ -22,5 +24,4 @@ class MyAdviceTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }

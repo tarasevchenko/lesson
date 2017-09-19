@@ -20,8 +20,8 @@ public class adviceShare {
 class   ViewControllerTwo : UIViewController {
         @IBOutlet weak var labelFromVC1: UILabel!
         var favouritesAdvice = ""
-    var share: [NSManagedObject] = []
-    override func viewDidLoad() {
+
+        override func viewDidLoad() {
         super.viewDidLoad()
    
     print(favouritesAdvice)

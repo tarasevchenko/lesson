@@ -152,14 +152,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="adviceCell" rowHeight="64" id="AU6-hc-KO4" customClass="MyAdviceTableViewCell" customModule="adviceWithCoreData" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="adviceCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="adviceCell" rowHeight="64" id="AU6-hc-KO4" customClass="MyAdviceTableViewCell" customModule="adviceWithCoreData" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="adviceCell" tableViewCell="AU6-hc-KO4" id="EYl-g8-r3Q">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AU6-hc-KO4" id="EYl-g8-r3Q">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lL6-k6-tU1">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="adviceCells" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lL6-k6-tU1">
                                                     <rect key="frame" x="0.0" y="8" width="375" height="42"/>
                                                     <color key="backgroundColor" red="0.87947982549667358" green="0.96759301424026489" blue="0.9149479866027832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
@@ -196,11 +196,39 @@
                     <tabBarItem key="tabBarItem" title="Item" id="LZb-ho-7jp"/>
                     <connections>
                         <outlet property="tableView" destination="7xm-pi-JR6" id="S9F-Qy-qc9"/>
+                        <segue destination="AM6-2P-YAk" kind="presentation" identifier="toAdviceAlert" id="eYp-hv-KFs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkr-LJ-efU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="565.60000000000002" y="1408.2458770614694"/>
+        </scene>
+        <!--View Controller Alert-->
+        <scene sceneID="3jb-dZ-CUj">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerAlert" id="AM6-2P-YAk" customClass="ViewControllerAlert" customModule="adviceWithCoreData" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8a5-iY-thw"/>
+                        <viewControllerLayoutGuide type="bottom" id="dcw-Q5-o8g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="edK-K0-8tO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb0-XZ-qzr">
+                                <rect key="frame" x="16" y="269" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzz-kI-EQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453.5999999999999" y="1408.2458770614694"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ozG-XJ-MzS">

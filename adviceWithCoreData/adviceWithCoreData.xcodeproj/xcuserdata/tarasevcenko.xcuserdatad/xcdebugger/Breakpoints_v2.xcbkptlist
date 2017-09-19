@@ -57,8 +57,8 @@
                   symbolName = "adviceWithCoreData.ViewControllerThree.__deallocating_deinit"
                   moduleName = "adviceWithCoreData"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tarasevcenko/Desktop/adviceWithCoreData/ViewControllerFavoritesAdvice.swift"
-                  timestampString = "527444416.496326"
+                  urlString = "file:///Users/tarasevcenko/Documents/lesson/adviceWithCoreData/ViewControllerFavoritesAdvice.swift"
+                  timestampString = "527500158.999698"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -72,13 +72,13 @@
                   symbolName = "adviceWithCoreData.ViewControllerThree.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; adviceWithCoreData.ViewControllerThree"
                   moduleName = "adviceWithCoreData"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tarasevcenko/Desktop/adviceWithCoreData/ViewControllerFavoritesAdvice.swift"
-                  timestampString = "527444416.508926"
+                  urlString = "file:///Users/tarasevcenko/Documents/lesson/adviceWithCoreData/ViewControllerFavoritesAdvice.swift"
+                  timestampString = "527500159.002978"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "72">
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "70">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -87,8 +87,8 @@
                   symbolName = "adviceWithCoreData.ViewControllerThree.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; adviceWithCoreData.ViewControllerThree"
                   moduleName = "adviceWithCoreData"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tarasevcenko/Desktop/adviceWithCoreData/ViewControllerFavoritesAdvice.swift"
-                  timestampString = "527444416.517896"
+                  urlString = "file:///Users/tarasevcenko/Documents/lesson/adviceWithCoreData/ViewControllerFavoritesAdvice.swift"
+                  timestampString = "527500159.006336"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -102,8 +102,8 @@
                   symbolName = "adviceWithCoreData.ViewControllerThree.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;adviceWithCoreData.ViewControllerThree&gt;"
                   moduleName = "adviceWithCoreData"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tarasevcenko/Desktop/adviceWithCoreData/ViewControllerFavoritesAdvice.swift"
-                  timestampString = "527444416.524438"
+                  urlString = "file:///Users/tarasevcenko/Documents/lesson/adviceWithCoreData/ViewControllerFavoritesAdvice.swift"
+                  timestampString = "527500159.009611"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -117,13 +117,13 @@
                   symbolName = "adviceWithCoreData.ViewControllerThree.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;adviceWithCoreData.ViewControllerThree&gt;"
                   moduleName = "adviceWithCoreData"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tarasevcenko/Desktop/adviceWithCoreData/ViewControllerFavoritesAdvice.swift"
-                  timestampString = "527444416.530689"
+                  urlString = "file:///Users/tarasevcenko/Documents/lesson/adviceWithCoreData/ViewControllerFavoritesAdvice.swift"
+                  timestampString = "527500159.013149"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "31">
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -215,11 +215,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViewControllerFavoritesAdvice.swift"
-            timestampString = "527499045.867006"
+            timestampString = "527502099.61603"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "ViewControllerThree"
             landmarkType = "3">
          </BreakpointContent>
@@ -231,11 +231,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViewControllerFavoritesAdvice.swift"
-            timestampString = "527499045.867006"
+            timestampString = "527502099.61603"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "ViewControllerThree"
             landmarkType = "3">
          </BreakpointContent>
@@ -379,6 +379,70 @@
                   offsetFromSymbolStart = "28">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViewControllerFavoritesAdvice.swift"
+            timestampString = "527501245.758845"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "adviceWithCoreData/MyAdviceTableViewCell.swift"
+            timestampString = "527504461.899754"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "setSelected(_:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AdviceStorage+CoreDataClass.swift"
+            timestampString = "527502967.929304"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "AdviceStorage"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AdviceStorage+CoreDataProperties.swift"
+            timestampString = "527502982.648645"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "fetchRequest()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
