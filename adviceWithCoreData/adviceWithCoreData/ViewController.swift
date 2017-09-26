@@ -7,22 +7,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var adviceButton: UIButton!
     
     @IBAction func randomButtonAdvice(_ sender: UIButton) {
-    let adviceNew = adviceService()
+    let adviceNew = RandomAdvice()
     let adviceRandom = adviceNew.randomAdvice()
     adviceLabel.text = adviceRandom
 
     }
     
     @IBAction func toFavourites(_ sender: UIButton) {
+       
         let viewControllerTwo = storyboard?.instantiateViewController(withIdentifier: "ViewControllerTwo") as! ViewControllerTwo
         viewControllerTwo.favouritesAdvice = adviceLabel.text!
-        
-        
+        DataAdvice.Advice.adviceToSave  = adviceLabel.text!
         present(viewControllerTwo, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+          self.navigationItem.rightBarButtonItem = self.editButtonItem
         // Do any additional setup after loading the view, typically from a nib.
     }
     

@@ -9,12 +9,10 @@
 import UIKit
 
 class MyAdviceTableViewCell: UITableViewCell {
-    
-   
-    
+
     @IBOutlet weak var myAdviceCell: UILabel!
     
-    override func awakeFromNib() {
+   override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }

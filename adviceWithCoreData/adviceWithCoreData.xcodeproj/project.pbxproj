@@ -17,13 +17,14 @@
 		A10561A91F6FB7760016E551 /* adviceWithCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561A81F6FB7760016E551 /* adviceWithCoreDataUITests.swift */; };
 		A10561BF1F6FCA690016E551 /* adviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561B91F6FCA690016E551 /* adviceModel.swift */; };
 		A10561C01F6FCA690016E551 /* advices.json in Resources */ = {isa = PBXBuildFile; fileRef = A10561BA1F6FCA690016E551 /* advices.json */; };
-		A10561C11F6FCA690016E551 /* adviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561BB1F6FCA690016E551 /* adviceService.swift */; };
+		A10561C11F6FCA690016E551 /* RandomAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561BB1F6FCA690016E551 /* RandomAdvice.swift */; };
 		A10561C31F6FCA690016E551 /* ViewControllerFavoritesAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561BD1F6FCA690016E551 /* ViewControllerFavoritesAdvice.swift */; };
 		A10561C41F6FCA690016E551 /* ViewControllerSaveAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561BE1F6FCA690016E551 /* ViewControllerSaveAdvice.swift */; };
 		A10561C91F70FAD80016E551 /* MyAdviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561C81F70FAD80016E551 /* MyAdviceTableViewCell.swift */; };
 		A10561D31F7113BB0016E551 /* ViewControllerAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561D21F7113BB0016E551 /* ViewControllerAlert.swift */; };
 		A10561D61F7119280016E551 /* AdviceStorage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561D41F7119280016E551 /* AdviceStorage+CoreDataClass.swift */; };
 		A10561D71F7119280016E551 /* AdviceStorage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561D51F7119280016E551 /* AdviceStorage+CoreDataProperties.swift */; };
+		A19D1DF11F797EB900ADB621 /* DataAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19D1DF01F797EB900ADB621 /* DataAdvice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +61,14 @@
 		A10561AA1F6FB7760016E551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A10561B91F6FCA690016E551 /* adviceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = adviceModel.swift; sourceTree = "<group>"; };
 		A10561BA1F6FCA690016E551 /* advices.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = advices.json; sourceTree = "<group>"; };
-		A10561BB1F6FCA690016E551 /* adviceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = adviceService.swift; sourceTree = "<group>"; };
+		A10561BB1F6FCA690016E551 /* RandomAdvice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomAdvice.swift; sourceTree = "<group>"; };
 		A10561BD1F6FCA690016E551 /* ViewControllerFavoritesAdvice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerFavoritesAdvice.swift; path = ../ViewControllerFavoritesAdvice.swift; sourceTree = "<group>"; };
 		A10561BE1F6FCA690016E551 /* ViewControllerSaveAdvice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerSaveAdvice.swift; path = ../ViewControllerSaveAdvice.swift; sourceTree = "<group>"; };
 		A10561C81F70FAD80016E551 /* MyAdviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAdviceTableViewCell.swift; sourceTree = "<group>"; };
 		A10561D21F7113BB0016E551 /* ViewControllerAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAlert.swift; sourceTree = "<group>"; };
 		A10561D41F7119280016E551 /* AdviceStorage+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AdviceStorage+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A10561D51F7119280016E551 /* AdviceStorage+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AdviceStorage+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A19D1DF01F797EB900ADB621 /* DataAdvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAdvice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +177,8 @@
 		A10561C71F6FCABE0016E551 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A10561BB1F6FCA690016E551 /* adviceService.swift */,
+				A10561BB1F6FCA690016E551 /* RandomAdvice.swift */,
+				A19D1DF01F797EB900ADB621 /* DataAdvice.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -321,10 +324,11 @@
 				A10561881F6FB7760016E551 /* ViewController.swift in Sources */,
 				A10561C41F6FCA690016E551 /* ViewControllerSaveAdvice.swift in Sources */,
 				A10561D71F7119280016E551 /* AdviceStorage+CoreDataProperties.swift in Sources */,
+				A19D1DF11F797EB900ADB621 /* DataAdvice.swift in Sources */,
 				A10561C91F70FAD80016E551 /* MyAdviceTableViewCell.swift in Sources */,
 				A10561BF1F6FCA690016E551 /* adviceModel.swift in Sources */,
 				A10561861F6FB7760016E551 /* AppDelegate.swift in Sources */,
-				A10561C11F6FCA690016E551 /* adviceService.swift in Sources */,
+				A10561C11F6FCA690016E551 /* RandomAdvice.swift in Sources */,
 				A105618E1F6FB7760016E551 /* adviceWithCoreData.xcdatamodeld in Sources */,
 				A10561D31F7113BB0016E551 /* ViewControllerAlert.swift in Sources */,
 			);

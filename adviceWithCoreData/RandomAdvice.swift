@@ -11,10 +11,9 @@ import CoreData
 import UIKit
 
 
-class adviceService {
+class RandomAdvice {
     //получение файла json
     var advices: [advice]! = [advice]()
-    
     init() {
         advices = loadAdvices(fileName: "advices", ext: "json")
         
@@ -23,15 +22,12 @@ class adviceService {
     {
         let path =  Bundle.main.path(forResource: fileName, ofType: ext)
         guard let resourcePath = path else  {
-            
-            return [advice]()
-            
+        return [advice]()
         }
-        let url = URL(fileURLWithPath:resourcePath)
-        guard let data = try? Data(contentsOf: url)
+            let url = URL(fileURLWithPath:resourcePath)
+            guard let data = try? Data(contentsOf: url)
             else {
-                return [advice]()
-                
+            return [advice]()
         }
         
         
@@ -72,8 +68,7 @@ class adviceService {
     
     
     }
-    
-//singletone
+
 
 
 
