@@ -27,33 +27,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тут будет охуенный совет" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoI-Fw-olT">
-                                <rect key="frame" x="60" y="112" width="255" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="G1h-07-IQR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wk-qE-lTf">
-                                <rect key="frame" x="64" y="313" width="247" height="66"/>
-                                <color key="backgroundColor" red="0.67797654870000001" green="0.9308739305" blue="0.85933136939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="7oR-4L-c0o"/>
-                                </constraints>
-                                <state key="normal" title="Получить совет!">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="randomButtonAdvice:" destination="SPd-eM-TqP" eventType="touchUpInside" id="1Y8-PJ-PTG"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L84-cq-xfe">
-                                <rect key="frame" x="164.5" y="40" width="46" height="48"/>
+                                <rect key="frame" x="321" y="311.5" width="44" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="sRm-OV-KFb"/>
+                                    <constraint firstAttribute="height" constant="44" id="Lht-uu-glE"/>
+                                    <constraint firstAttribute="width" constant="44" id="PRm-Xx-no8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="+">
@@ -63,18 +41,36 @@
                                     <action selector="toFavourites:" destination="SPd-eM-TqP" eventType="touchUpInside" id="Toa-4q-uru"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wk-qE-lTf">
+                                <rect key="frame" x="26" y="311.5" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="iat-y4-mwL"/>
+                                    <constraint firstAttribute="height" constant="44" id="kwF-MQ-G4R"/>
+                                </constraints>
+                                <state key="normal" image="drama">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="randomButtonAdvice:" destination="SPd-eM-TqP" eventType="touchUpInside" id="1Y8-PJ-PTG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тут будет охуенный совет" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoI-Fw-olT">
+                                <rect key="frame" x="80" y="323.5" width="231" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="L84-cq-xfe" firstAttribute="top" secondItem="510-7f-57N" secondAttribute="bottom" constant="20" id="7pk-bT-P4I"/>
-                            <constraint firstItem="L84-cq-xfe" firstAttribute="centerX" secondItem="JoI-Fw-olT" secondAttribute="centerX" id="OQR-WI-7Bh"/>
-                            <constraint firstItem="JoI-Fw-olT" firstAttribute="top" secondItem="510-7f-57N" secondAttribute="bottom" constant="92" id="XoF-3M-8dg"/>
-                            <constraint firstItem="9Tg-PT-KmC" firstAttribute="top" secondItem="0wk-qE-lTf" secondAttribute="bottom" constant="239" id="q2Z-1U-6bz"/>
-                            <constraint firstItem="JoI-Fw-olT" firstAttribute="centerX" secondItem="0wk-qE-lTf" secondAttribute="centerX" id="sHi-pM-lOw"/>
-                            <constraint firstItem="0wk-qE-lTf" firstAttribute="leading" secondItem="a2Y-hh-LHt" secondAttribute="leadingMargin" constant="48" id="vgv-7H-28A"/>
-                            <constraint firstItem="JoI-Fw-olT" firstAttribute="leading" secondItem="a2Y-hh-LHt" secondAttribute="leadingMargin" constant="44" id="z8J-oL-hnU"/>
-                            <constraint firstItem="0wk-qE-lTf" firstAttribute="centerX" secondItem="a2Y-hh-LHt" secondAttribute="centerX" id="zoT-qd-78i"/>
+                            <constraint firstItem="0wk-qE-lTf" firstAttribute="centerY" secondItem="a2Y-hh-LHt" secondAttribute="centerY" id="0B0-dj-3yZ"/>
+                            <constraint firstItem="L84-cq-xfe" firstAttribute="leading" secondItem="JoI-Fw-olT" secondAttribute="trailing" constant="10" id="4Lz-Tq-ulS"/>
+                            <constraint firstAttribute="trailing" secondItem="L84-cq-xfe" secondAttribute="trailing" constant="10" id="HO6-Sb-bsH"/>
+                            <constraint firstItem="0wk-qE-lTf" firstAttribute="leading" secondItem="a2Y-hh-LHt" secondAttribute="leading" constant="26" id="KQ2-bm-DSE"/>
+                            <constraint firstItem="L84-cq-xfe" firstAttribute="centerY" secondItem="a2Y-hh-LHt" secondAttribute="centerY" id="g5K-y5-ET0"/>
+                            <constraint firstItem="JoI-Fw-olT" firstAttribute="centerY" secondItem="a2Y-hh-LHt" secondAttribute="centerY" id="jsi-HL-JqO"/>
+                            <constraint firstItem="JoI-Fw-olT" firstAttribute="leading" secondItem="0wk-qE-lTf" secondAttribute="trailing" constant="10" id="rCE-2A-gkF"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="g6O-su-77q"/>
@@ -99,25 +95,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLJ-CS-eg5">
-                                <rect key="frame" x="292" y="28" width="67" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="rMC-JG-GVW"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLJ-CS-eg5">
+                                <rect key="frame" x="305" y="318" width="60" height="30"/>
                                 <state key="normal" title="Закрыть"/>
                                 <connections>
                                     <action selector="closeFavourites:" destination="zKF-k3-vUS" eventType="touchUpInside" id="Hdq-Vt-zln"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZJ-17-9b1">
-                                <rect key="frame" x="5" y="28" width="69" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZJ-17-9b1">
+                                <rect key="frame" x="26" y="318" width="69" height="30"/>
                                 <state key="normal" title="Добавить"/>
                                 <connections>
                                     <action selector="saveAdviceToArray:" destination="zKF-k3-vUS" eventType="touchUpInside" id="XYd-CP-ppQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxj-Xo-whg">
-                                <rect key="frame" x="166.5" y="184" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxj-Xo-whg">
+                                <rect key="frame" x="105" y="323" width="190" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -125,12 +118,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.80753719810000002" green="0.91683417560000002" blue="0.28714674709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XLJ-CS-eg5" firstAttribute="trailing" secondItem="kTg-hQ-t0Y" secondAttribute="trailingMargin" id="2yZ-dS-Aog"/>
-                            <constraint firstItem="kZJ-17-9b1" firstAttribute="baseline" secondItem="XLJ-CS-eg5" secondAttribute="baseline" id="9YB-ga-qAG"/>
-                            <constraint firstItem="XLJ-CS-eg5" firstAttribute="top" secondItem="z7c-36-wmm" secondAttribute="bottom" constant="8" symbolic="YES" id="BKz-Ip-iy4"/>
-                            <constraint firstItem="xxj-Xo-whg" firstAttribute="centerX" secondItem="kTg-hQ-t0Y" secondAttribute="centerX" id="BWz-1n-s45"/>
-                            <constraint firstItem="xxj-Xo-whg" firstAttribute="top" secondItem="z7c-36-wmm" secondAttribute="bottom" constant="164" id="JOR-3M-wmG"/>
-                            <constraint firstItem="kZJ-17-9b1" firstAttribute="leading" secondItem="kTg-hQ-t0Y" secondAttribute="leadingMargin" constant="-11" id="lt0-s9-K9M"/>
+                            <constraint firstItem="kZJ-17-9b1" firstAttribute="centerY" secondItem="kTg-hQ-t0Y" secondAttribute="centerY" id="82D-RQ-Zz1"/>
+                            <constraint firstAttribute="trailing" secondItem="XLJ-CS-eg5" secondAttribute="trailing" constant="10" id="Kc4-uU-vkh"/>
+                            <constraint firstItem="XLJ-CS-eg5" firstAttribute="leading" secondItem="xxj-Xo-whg" secondAttribute="trailing" constant="10" id="Qb0-0E-Y7n"/>
+                            <constraint firstItem="xxj-Xo-whg" firstAttribute="centerY" secondItem="kTg-hQ-t0Y" secondAttribute="centerY" id="YfI-eu-nPf"/>
+                            <constraint firstItem="XLJ-CS-eg5" firstAttribute="centerY" secondItem="kTg-hQ-t0Y" secondAttribute="centerY" id="lCd-Og-dZo"/>
+                            <constraint firstItem="xxj-Xo-whg" firstAttribute="leading" secondItem="kZJ-17-9b1" secondAttribute="trailing" constant="10" id="wUT-ky-zA1"/>
+                            <constraint firstItem="kZJ-17-9b1" firstAttribute="leading" secondItem="kTg-hQ-t0Y" secondAttribute="leading" constant="26" id="x4n-Z5-lvG"/>
                         </constraints>
                     </view>
                     <connections>
@@ -139,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KPM-xd-d22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1154" y="603"/>
+            <point key="canvasLocation" x="1248.8" y="601.34932533733138"/>
         </scene>
         <!--Favorites Advice-->
         <scene sceneID="Png-cG-T6u">
@@ -164,7 +158,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="adviceCells" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lL6-k6-tU1">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="adviceCells" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lL6-k6-tU1">
                                                     <rect key="frame" x="0.0" y="8" width="375" height="42"/>
                                                     <color key="backgroundColor" red="0.87947982549667358" green="0.96759301424026489" blue="0.9149479866027832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
@@ -264,4 +258,7 @@
             <point key="canvasLocation" x="-433" y="891"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="drama" width="189" height="182"/>
+    </resources>
 </document>

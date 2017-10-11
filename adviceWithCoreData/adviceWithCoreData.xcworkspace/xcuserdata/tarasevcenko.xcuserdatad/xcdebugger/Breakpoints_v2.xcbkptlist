@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RandomAdvice.swift"
+            timestampString = "529399449.052583"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "loadAdvices(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "adviceWithCoreData.RandomAdvice.loadAdvices(completion: (Swift.Array&lt;adviceWithCoreData.Advice&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "adviceWithCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tarasevcenko/Desktop/%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B8%D0%B8%CC%86%20%D1%88%D0%B0%D0%BD%D1%81/adviceWithCoreData/RandomAdvice.swift"
+                  timestampString = "529399451.706552"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in adviceWithCoreData.RandomAdvice.loadAdvices(completion: (Swift.Array&lt;adviceWithCoreData.Advice&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "adviceWithCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tarasevcenko/Desktop/%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D0%B8%D0%B8%CC%86%20%D1%88%D0%B0%D0%BD%D1%81/adviceWithCoreData/RandomAdvice.swift"
+                  timestampString = "529399451.730769"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "58">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

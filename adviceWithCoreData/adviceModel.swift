@@ -7,12 +7,35 @@
 //
 
 import Foundation
+import Realm
+import RealmSwift
+import Alamofire
+import ObjectMapper
 
-struct advice {
-    let id: Int
+struct Advice {
+    let id: String
     let text: String
-    let state: Int
+    let stat: String
     let sound: String
-    
 }
 
+
+
+class AdviceRealm: Object, Mappable{
+    @objc dynamic var id = ""
+    @objc dynamic var text = ""
+    @objc dynamic var stat = ""
+    @objc dynamic var sound = ""
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    
+    func mapping (map:Map) {
+        id <- map["id"]
+        text <- map["text"]
+        stat <- map["stat"]
+        sound <- map["sound"]
+        
+    }
+}

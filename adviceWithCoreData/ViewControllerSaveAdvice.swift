@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import CoreData
+import RealmSwift
 
 
 
@@ -21,7 +21,12 @@ class   ViewControllerTwo : UIViewController {
         
     }
     @IBAction func saveAdviceToArray(_ sender: Any) {
-        saveAdvice(advice: (Any).self)
+        let realm = try! Realm()      //запись в realm
+        try! realm.write ({
+            let saveRealm = AdviceRealm()
+            saveRealm.text = favouritesAdvice
+            realm.add(saveRealm)
+        })
         
     }
     
