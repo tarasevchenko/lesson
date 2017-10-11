@@ -13,6 +13,20 @@ import RealmSwift
 class   FavoritesAdvice : UIViewController, UITableViewDelegate,UITableViewDataSource {
     let realm = try! Realm()
     
+    @IBAction func editAdvice(_ sender: UIButton) {
+        tableView.setEditing(true, animated: false)
+        tableView.reloadData()
+    }
+    
+    @IBAction func cancelEdit(_ sender: UIButton) {
+        tableView.setEditing(false, animated: false)
+        tableView.reloadData()
+    }
+    
+    
+    
+    
+ 
     @IBOutlet weak var tableView: UITableView!
     
     override func didReceiveMemoryWarning() {
@@ -23,10 +37,9 @@ class   FavoritesAdvice : UIViewController, UITableViewDelegate,UITableViewDataS
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        readAdvice()
         tableView.reloadData()
         tableView.allowsSelectionDuringEditing = true
-        tableView.setEditing(true, animated: false)
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,15 +63,15 @@ class   FavoritesAdvice : UIViewController, UITableViewDelegate,UITableViewDataS
     
     //Нажатие на ячейку
     
-    //    func  tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //
-    //        let viewControllerAlert = storyboard?.instantiateViewController(withIdentifier: "ViewControllerAlert") as! ViewControllerAlert
-    //        let adviceAlerts = DataAdvice.Advice.data[indexPath.row]
-    //        let advicesAlert = adviceAlerts.value(forKeyPath: "advicesText") as? String
-    //        viewControllerAlert.alertAdvice = advicesAlert!
-    //
-    //        present( viewControllerAlert, animated: true, completion: nil)
-    //    }
+        func  tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+            let viewControllerAlert = storyboard?.instantiateViewController(withIdentifier: "ViewControllerAlert") as! ViewControllerAlert
+            let realmAdvices = realm.objects(AdviceRealm.self)
+            let advicesAlert = realmAdvices[indexPath.row]
+            viewControllerAlert.alertAdvice = advicesAlert.text
+    
+            present( viewControllerAlert, animated: true, completion: nil)
+        }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
@@ -67,12 +80,17 @@ class   FavoritesAdvice : UIViewController, UITableViewDelegate,UITableViewDataS
         return true
     }
     
-    //    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-    //        let source = DataAdvice.Advice.data[sourceIndexPath.row]
-    //        DataAdvice.Advice.data[sourceIndexPath.row] = DataAdvice.Advice.data[destinationIndexPath.row]
-    //        DataAdvice.Advice.data[destinationIndexPath.row] = source
+       func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+//
+//        let realmAdvices = realm.objects(AdviceRealm.self)
+//        var source = realmAdvices[sourceIndexPath.row]
+//
+//          realmAdvices[sourceIndexPath.row] = realmAdvices[destinationIndexPath.row]
+//          realmAdvices = source
     
-    //}
+    }
+    
+    
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
         return .delete
     }
