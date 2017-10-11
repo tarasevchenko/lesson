@@ -5,6 +5,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var adviceLabel: UILabel!
     @IBOutlet weak var adviceButton: UIButton!
+    
     @IBAction func randomButtonAdvice(_ sender: UIButton) {
 
         let adviceNew = RandomAdvice()
@@ -12,7 +13,8 @@ class ViewController: UIViewController {
         adviceLabel.text = adviceRandom
 
     }
-    
+   
+
     @IBAction func toFavourites(_ sender: UIButton) {
        
         let viewControllerTwo = storyboard?.instantiateViewController(withIdentifier: "ViewControllerTwo") as! ViewControllerTwo
@@ -23,12 +25,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        adviceLabel.text = RandomAdvice().randomAdvice()
+
         //print(Realm.Configuration.defaultConfiguration)
         RandomAdvice().loadAdvices(completion: { (advices) -> (Void) in
-            DispatchQueue.main.async {
-                // update UI
-            }
+                DispatchQueue.main.async {
+                self.adviceLabel.text = RandomAdvice().randomAdvice()            }
         })
           self.navigationItem.rightBarButtonItem = self.editButtonItem
         // Do any additional setup after loading the view, typically from a nib.

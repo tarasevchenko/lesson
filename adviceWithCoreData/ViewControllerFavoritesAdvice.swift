@@ -80,13 +80,14 @@ class   FavoritesAdvice : UIViewController, UITableViewDelegate,UITableViewDataS
         return true
     }
     
-       func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-//
-//        let realmAdvices = realm.objects(AdviceRealm.self)
-//        var source = realmAdvices[sourceIndexPath.row]
-//
-//          realmAdvices[sourceIndexPath.row] = realmAdvices[destinationIndexPath.row]
-//          realmAdvices = source
+   func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+    
+        let realmAdvices = realm.objects(AdviceRealm.self)
+        let source = realmAdvices[sourceIndexPath.row]
+
+        realmAdvices[sourceIndexPath.row].text = realmAdvices[destinationIndexPath.row].text
+        realmAdvices[destinationIndexPath.row].text = source.text
+        realm.add(source)
     
     }
     

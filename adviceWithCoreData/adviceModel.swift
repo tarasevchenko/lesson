@@ -21,7 +21,7 @@ struct Advice {
 
 
 
-class AdviceRealm: Object{
+class AdviceRealm: Object,Mappable{
     @objc dynamic var id = ""
     @objc dynamic var text = ""
     @objc dynamic var stat = ""
@@ -31,12 +31,12 @@ class AdviceRealm: Object{
     }
     
     
-//    func mapping (map:Map) {
-//        id <- map["id"]
-//        text <- map["text"]
-//        stat <- map["stat"]
-//        sound <- map["sound"]
-//
-//    }
+    func mapping (map:Map) {
+        id <- map["id"]
+        text <- map["text"]
+        stat <- map["stat"]
+        sound <- map["sound"]
+
+    }
 }
 
