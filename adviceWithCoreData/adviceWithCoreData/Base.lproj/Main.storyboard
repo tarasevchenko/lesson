@@ -111,13 +111,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxj-Xo-whg">
-                                <rect key="frame" x="105" y="323" width="190" height="21"/>
+                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajp-cU-tDm">
-                                <rect key="frame" x="187.5" y="172" width="0.0" height="34"/>
+                                <rect key="frame" x="187.5" y="263" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -125,15 +125,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.80753719810000002" green="0.91683417560000002" blue="0.28714674709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ajp-cU-tDm" firstAttribute="centerX" secondItem="kTg-hQ-t0Y" secondAttribute="centerX" id="3S6-H8-1el"/>
+                            <constraint firstItem="xxj-Xo-whg" firstAttribute="centerY" secondItem="kTg-hQ-t0Y" secondAttribute="centerY" id="4u5-y9-y10"/>
                             <constraint firstItem="kZJ-17-9b1" firstAttribute="centerY" secondItem="kTg-hQ-t0Y" secondAttribute="centerY" id="82D-RQ-Zz1"/>
                             <constraint firstAttribute="trailing" secondItem="XLJ-CS-eg5" secondAttribute="trailing" constant="10" id="Kc4-uU-vkh"/>
-                            <constraint firstItem="XLJ-CS-eg5" firstAttribute="leading" secondItem="xxj-Xo-whg" secondAttribute="trailing" constant="10" id="Qb0-0E-Y7n"/>
-                            <constraint firstItem="xxj-Xo-whg" firstAttribute="centerY" secondItem="kTg-hQ-t0Y" secondAttribute="centerY" id="YfI-eu-nPf"/>
+                            <constraint firstItem="ajp-cU-tDm" firstAttribute="centerX" secondItem="kTg-hQ-t0Y" secondAttribute="centerX" id="SYO-e6-9Vp"/>
+                            <constraint firstItem="xxj-Xo-whg" firstAttribute="top" secondItem="ajp-cU-tDm" secondAttribute="bottom" constant="60" id="iL8-h3-uui"/>
                             <constraint firstItem="XLJ-CS-eg5" firstAttribute="centerY" secondItem="kTg-hQ-t0Y" secondAttribute="centerY" id="lCd-Og-dZo"/>
-                            <constraint firstItem="ajp-cU-tDm" firstAttribute="top" secondItem="z7c-36-wmm" secondAttribute="bottom" constant="152" id="rN7-Bb-Riv"/>
-                            <constraint firstItem="xxj-Xo-whg" firstAttribute="top" secondItem="ajp-cU-tDm" secondAttribute="bottom" constant="117" id="rja-C9-m1C"/>
-                            <constraint firstItem="xxj-Xo-whg" firstAttribute="leading" secondItem="kZJ-17-9b1" secondAttribute="trailing" constant="10" id="wUT-ky-zA1"/>
+                            <constraint firstItem="xxj-Xo-whg" firstAttribute="centerX" secondItem="kTg-hQ-t0Y" secondAttribute="centerX" id="ojw-kM-sJu"/>
                             <constraint firstItem="kZJ-17-9b1" firstAttribute="leading" secondItem="kTg-hQ-t0Y" secondAttribute="leading" constant="26" id="x4n-Z5-lvG"/>
                         </constraints>
                     </view>
@@ -248,16 +246,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb0-XZ-qzr">
-                                <rect key="frame" x="16" y="269" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb0-XZ-qzr">
+                                <rect key="frame" x="0.0" y="269" width="375" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRE-3j-u4q">
-                                <rect key="frame" x="228" y="20" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRE-3j-u4q">
+                                <rect key="frame" x="228" y="40" width="127" height="30"/>
                                 <state key="normal" title="Закрыть"/>
                                 <connections>
                                     <action selector="closeAlert:" destination="AM6-2P-YAk" eventType="touchUpInside" id="Eb6-6m-WNI"/>
@@ -265,6 +261,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NRE-3j-u4q" secondAttribute="trailing" constant="20" id="7Sn-6u-kZW"/>
+                            <constraint firstItem="Tb0-XZ-qzr" firstAttribute="leading" secondItem="edK-K0-8tO" secondAttribute="leading" id="cqw-Tj-4rZ"/>
+                            <constraint firstItem="NRE-3j-u4q" firstAttribute="top" secondItem="8a5-iY-thw" secondAttribute="bottom" constant="20" id="ef4-nT-dEp"/>
+                            <constraint firstItem="Tb0-XZ-qzr" firstAttribute="centerX" secondItem="edK-K0-8tO" secondAttribute="centerX" id="m7s-7N-NFm"/>
+                            <constraint firstItem="dcw-Q5-o8g" firstAttribute="top" secondItem="Tb0-XZ-qzr" secondAttribute="bottom" constant="377" id="n2D-NC-pt9"/>
+                            <constraint firstAttribute="trailing" secondItem="Tb0-XZ-qzr" secondAttribute="trailing" id="o0l-Oz-vhh"/>
+                            <constraint firstItem="NRE-3j-u4q" firstAttribute="leading" secondItem="edK-K0-8tO" secondAttribute="leading" constant="228" id="xva-JR-2Ad"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="alertAdviceLabel" destination="Tb0-XZ-qzr" id="y5P-jm-pkh"/>
