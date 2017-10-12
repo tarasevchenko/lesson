@@ -39,6 +39,8 @@ class   FavoritesAdvice : UIViewController, UITableViewDelegate,UITableViewDataS
         super.viewWillAppear(animated)
         tableView.reloadData()
         tableView.allowsSelectionDuringEditing = true
+        tableView.estimatedRowHeight = tableView.rowHeight
+        tableView.rowHeight = UITableViewAutomaticDimension
         
     }
     

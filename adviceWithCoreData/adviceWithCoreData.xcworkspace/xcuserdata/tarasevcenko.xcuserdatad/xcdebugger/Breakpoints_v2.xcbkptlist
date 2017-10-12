@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomAdvice.swift"
-            timestampString = "529488769.472199"
+            timestampString = "529503959.175296"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "loadAdvices(completion:)"
             landmarkType = "7">
             <Locations>
@@ -25,12 +25,12 @@
                   symbolName = "adviceWithCoreData.RandomAdvice.loadAdvices(completion: (Swift.Array&lt;adviceWithCoreData.Advice&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "adviceWithCoreData"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tarasevcenko/Documents/lesson/lesson-master/adviceWithCoreData/RandomAdvice.swift"
-                  timestampString = "529420555.518772"
+                  urlString = "file:///Users/tarasevcenko/Documents/lesson/adviceWithCoreData/RandomAdvice.swift"
+                  timestampString = "529495040.14928"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
                   offsetFromSymbolStart = "184">
                </Location>
                <Location
@@ -40,12 +40,12 @@
                   symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in adviceWithCoreData.RandomAdvice.loadAdvices(completion: (Swift.Array&lt;adviceWithCoreData.Advice&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "adviceWithCoreData"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tarasevcenko/Documents/lesson/lesson-master/adviceWithCoreData/RandomAdvice.swift"
-                  timestampString = "529420555.530471"
+                  urlString = "file:///Users/tarasevcenko/Documents/lesson/adviceWithCoreData/RandomAdvice.swift"
+                  timestampString = "529495040.170498"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
                   offsetFromSymbolStart = "58">
                </Location>
             </Locations>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomAdvice.swift"
-            timestampString = "529488769.4731"
+            timestampString = "529503959.190627"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
             landmarkName = "loadAdvices(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomAdvice.swift"
-            timestampString = "529488769.473667"
+            timestampString = "529503959.191928"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
@@ -90,23 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomAdvice.swift"
-            timestampString = "529488769.474206"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "loadAdvices(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RandomAdvice.swift"
-            timestampString = "529488769.474728"
+            timestampString = "529503959.193072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
@@ -122,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomAdvice.swift"
-            timestampString = "529488769.475251"
+            timestampString = "529503959.19418"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "loadAdvices(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RandomAdvice.swift"
-            timestampString = "529488769.475824"
+            timestampString = "529503959.195386"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "loadAdvices(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -150,16 +134,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "adviceWithCoreData/ViewController.swift"
-            timestampString = "529488769.476348"
+            filePath = "RandomAdvice.swift"
+            timestampString = "529503959.196547"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "randomButtonAdvice(_:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "randomAdviceInternet()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RandomAdvice.swift"
+            timestampString = "529503959.197737"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "randomAdviceInternet()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RandomAdvice.swift"
+            timestampString = "529503959.198936"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "randomAdviceInternet()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RandomAdvice.swift"
+            timestampString = "529503959.199988"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "randomAdviceInternet()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -170,13 +202,141 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "adviceWithCoreData/ViewController.swift"
-            timestampString = "529488769.476437"
+            timestampString = "529503959.201066"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "randomButtonAdvice(_:)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "adviceWithCoreData.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "adviceWithCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tarasevcenko/Documents/lesson/adviceWithCoreData/adviceWithCoreData/ViewController.swift"
+                  timestampString = "529499059.480207"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "299">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;adviceWithCoreData.Advice&gt;) -&gt; () in adviceWithCoreData.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "adviceWithCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tarasevcenko/Documents/lesson/adviceWithCoreData/adviceWithCoreData/ViewController.swift"
+                  timestampString = "529499059.486504"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "21">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "adviceWithCoreData/ViewController.swift"
+            timestampString = "529503959.201265"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "adviceWithCoreData.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "adviceWithCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tarasevcenko/Documents/lesson/adviceWithCoreData/adviceWithCoreData/ViewController.swift"
+                  timestampString = "529496323.714522"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;adviceWithCoreData.Advice&gt;) -&gt; () in adviceWithCoreData.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "adviceWithCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tarasevcenko/Documents/lesson/adviceWithCoreData/adviceWithCoreData/ViewController.swift"
+                  timestampString = "529496323.722464"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "21">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "adviceWithCoreData/ViewController.swift"
+            timestampString = "529503959.201439"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "adviceWithCoreData.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "adviceWithCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tarasevcenko/Documents/lesson/adviceWithCoreData/adviceWithCoreData/ViewController.swift"
+                  timestampString = "529499059.499129"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "299">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;adviceWithCoreData.Advice&gt;) -&gt; () in adviceWithCoreData.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "adviceWithCoreData"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tarasevcenko/Documents/lesson/adviceWithCoreData/adviceWithCoreData/ViewController.swift"
+                  timestampString = "529499059.503476"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "21">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

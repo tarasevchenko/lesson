@@ -23,7 +23,7 @@
 		A10561C41F6FCA690016E551 /* ViewControllerSaveAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561BE1F6FCA690016E551 /* ViewControllerSaveAdvice.swift */; };
 		A10561C91F70FAD80016E551 /* MyAdviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561C81F70FAD80016E551 /* MyAdviceTableViewCell.swift */; };
 		A10561D31F7113BB0016E551 /* ViewControllerAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561D21F7113BB0016E551 /* ViewControllerAlert.swift */; };
-		A19D1DF11F797EB900ADB621 /* DataAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19D1DF01F797EB900ADB621 /* DataAdvice.swift */; };
+		A132175D1F8F7B160048B1F6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132175C1F8F7B160048B1F6 /* Reachability.swift */; };
 		A1CBD1011F7FC3B800FAFAC6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A1CBD1001F7FC3B800FAFAC6 /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +69,7 @@
 		A10561BE1F6FCA690016E551 /* ViewControllerSaveAdvice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerSaveAdvice.swift; path = ../ViewControllerSaveAdvice.swift; sourceTree = "<group>"; };
 		A10561C81F70FAD80016E551 /* MyAdviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAdviceTableViewCell.swift; sourceTree = "<group>"; };
 		A10561D21F7113BB0016E551 /* ViewControllerAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAlert.swift; sourceTree = "<group>"; };
-		A19D1DF01F797EB900ADB621 /* DataAdvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAdvice.swift; sourceTree = "<group>"; };
+		A132175C1F8F7B160048B1F6 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A1CBD1001F7FC3B800FAFAC6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -198,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				A10561BB1F6FCA690016E551 /* RandomAdvice.swift */,
-				A19D1DF01F797EB900ADB621 /* DataAdvice.swift */,
+				A132175C1F8F7B160048B1F6 /* Reachability.swift */,
 				A1CBD1001F7FC3B800FAFAC6 /* Podfile */,
 			);
 			name = Services;
@@ -405,9 +405,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10561C31F6FCA690016E551 /* ViewControllerFavoritesAdvice.swift in Sources */,
+				A132175D1F8F7B160048B1F6 /* Reachability.swift in Sources */,
 				A10561881F6FB7760016E551 /* ViewController.swift in Sources */,
 				A10561C41F6FCA690016E551 /* ViewControllerSaveAdvice.swift in Sources */,
-				A19D1DF11F797EB900ADB621 /* DataAdvice.swift in Sources */,
 				A10561C91F70FAD80016E551 /* MyAdviceTableViewCell.swift in Sources */,
 				A10561BF1F6FCA690016E551 /* adviceModel.swift in Sources */,
 				A10561861F6FB7760016E551 /* AppDelegate.swift in Sources */,

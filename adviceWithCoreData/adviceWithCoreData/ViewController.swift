@@ -7,13 +7,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var adviceButton: UIButton!
     
     @IBAction func randomButtonAdvice(_ sender: UIButton) {
-
-        let adviceNew = RandomAdvice()
-        let adviceRandom = adviceNew.randomAdvice()
-        adviceLabel.text = adviceRandom
-
+if Reachability().isInternetAvailable() == true {
+    let adviceNew = RandomAdvice()
+    let adviceRandom = adviceNew.randomAdviceInternet()
+    adviceLabel.text = adviceRandom
+} else {
+    let adviceNew = RandomAdvice()
+    let adviceRandom = adviceNew.randomAdviceFavourites()
+    adviceLabel.text = adviceRandom
+    
     }
-   
+        
+    }
 
     @IBAction func toFavourites(_ sender: UIButton) {
        
@@ -25,12 +30,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //print(Realm.Configuration.defaultConfiguration)
-        RandomAdvice().loadAdvices(completion: { (advices) -> (Void) in
+        
+        if Reachability().isInternetAvailable() == true {
+            RandomAdvice().loadAdvices(completion: { (advices) -> (Void) in
                 DispatchQueue.main.async {
-                self.adviceLabel.text = RandomAdvice().randomAdvice()            }
-        })
+                    self.adviceLabel.text = RandomAdvice().randomAdviceInternet()            }
+            })
+        } else {
+            RandomAdvice().loadAdvices(completion: { (advices) -> (Void) in
+                DispatchQueue.main.async {
+                    self.adviceLabel.text = RandomAdvice().randomAdviceFavourites()            }
+            })
+            
+        }
+        
+        //print(Realm.Configuration.defaultConfiguration)
+      
           self.navigationItem.rightBarButtonItem = self.editButtonItem
         // Do any additional setup after loading the view, typically from a nib.
     }

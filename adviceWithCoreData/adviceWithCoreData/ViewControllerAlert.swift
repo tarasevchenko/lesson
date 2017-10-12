@@ -12,7 +12,7 @@ class ViewControllerAlert: UIViewController {
     var alertAdvice = ""
     
     @IBAction func closeAlert(_ sender: Any) {
-            dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
   
     @IBOutlet weak var alertAdviceLabel: UILabel!
@@ -20,7 +20,6 @@ class ViewControllerAlert: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print (alertAdvice)
-    
         alertAdviceLabel.text = alertAdvice
         // Do any additional setup after loading the view.
     }
