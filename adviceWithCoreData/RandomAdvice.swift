@@ -30,7 +30,7 @@ class RandomAdvice {
                         
                         if let Id = id, let Text = text, let Stat = stat, let Sound = sound
                         {
-                            let Id = Id as String, Text = Text as String, Stat = Stat as String, Sound = Sound as String
+                            let Id = Id as String, Text = Text.replacingOccurrences(of: "&nbsp;", with: " ") as String, Stat = Stat as String, Sound = Sound as String
                             advices.append(Advice(id: Id, text: Text, stat: Stat, sound: Sound))
                             
                             let realm = try! Realm()      //запись в realm

@@ -40,3 +40,21 @@ class AdviceRealm: Object,Mappable{
     }
 }
 
+class AdviceRealmFavourites: Object,Mappable{
+    @objc dynamic var id = ""
+    @objc dynamic var text = ""
+    @objc dynamic var stat = ""
+    @objc dynamic var sound = ""
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    
+    func mapping (map:Map) {
+        id <- map["id"]
+        text <- map["text"]
+        stat <- map["stat"]
+        sound <- map["sound"]
+        
+    }
+}

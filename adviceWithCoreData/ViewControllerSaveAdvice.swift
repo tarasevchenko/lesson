@@ -23,7 +23,7 @@ class   ViewControllerTwo : UIViewController {
     @IBAction func saveAdviceToArray(_ sender: Any) {
         let realm = try! Realm()      //запись в realm
         try! realm.write ({
-            let saveRealm = AdviceRealm()
+            let saveRealm = AdviceRealmFavourites()
             saveRealm.text = favouritesAdvice
             realm.add(saveRealm)
         })

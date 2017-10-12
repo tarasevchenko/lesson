@@ -43,7 +43,7 @@ class   FavoritesAdvice : UIViewController, UITableViewDelegate,UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let realmAdvices = realm.objects(AdviceRealm.self)
+        let realmAdvices = realm.objects(AdviceRealmFavourites.self)
         let adviceSaves = realmAdvices.count
         return adviceSaves
     }
@@ -53,7 +53,7 @@ class   FavoritesAdvice : UIViewController, UITableViewDelegate,UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "adviceCell", for: indexPath) as! MyAdviceTableViewCell
-        let realmAdvices = realm.objects(AdviceRealm.self)
+        let realmAdvices = realm.objects(AdviceRealmFavourites.self)
         let adviceSaves = realmAdvices[indexPath.row]
         cell.myAdviceCell.text = adviceSaves.text
         
@@ -66,7 +66,7 @@ class   FavoritesAdvice : UIViewController, UITableViewDelegate,UITableViewDataS
         func  tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
             let viewControllerAlert = storyboard?.instantiateViewController(withIdentifier: "ViewControllerAlert") as! ViewControllerAlert
-            let realmAdvices = realm.objects(AdviceRealm.self)
+            let realmAdvices = realm.objects(AdviceRealmFavourites.self)
             let advicesAlert = realmAdvices[indexPath.row]
             viewControllerAlert.alertAdvice = advicesAlert.text
     
@@ -82,7 +82,7 @@ class   FavoritesAdvice : UIViewController, UITableViewDelegate,UITableViewDataS
     
    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
     
-        let realmAdvices = realm.objects(AdviceRealm.self)
+        let realmAdvices = realm.objects(AdviceRealmFavourites.self)
         let source = realmAdvices[sourceIndexPath.row].text
 
     try! realm.write {
@@ -111,7 +111,7 @@ class   FavoritesAdvice : UIViewController, UITableViewDelegate,UITableViewDataS
         
         let deleteAction = UITableViewRowAction(style: .destructive, title: "Удалить") {
             _, indexPath in
-            let realmAdvices = self.realm.objects(AdviceRealm.self)
+            let realmAdvices = self.realm.objects(AdviceRealmFavourites.self)
             self.realm.beginWrite()
             self.realm.delete(realmAdvices[indexPath.row])
             do {
