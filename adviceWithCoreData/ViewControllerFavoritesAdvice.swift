@@ -83,12 +83,12 @@ class   FavoritesAdvice : UIViewController, UITableViewDelegate,UITableViewDataS
    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
     
         let realmAdvices = realm.objects(AdviceRealm.self)
-        let source = realmAdvices[sourceIndexPath.row]
+        let source = realmAdvices[sourceIndexPath.row].text
 
+    try! realm.write {
         realmAdvices[sourceIndexPath.row].text = realmAdvices[destinationIndexPath.row].text
-        realmAdvices[destinationIndexPath.row].text = source.text
-        realm.add(source)
-    
+        realmAdvices[destinationIndexPath.row].text = source
+    }
     }
     
     
