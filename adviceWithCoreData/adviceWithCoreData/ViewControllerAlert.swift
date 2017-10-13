@@ -11,10 +11,14 @@ import UIKit
 class ViewControllerAlert: UIViewController {
     var alertAdvice = ""
     
+    @IBAction func share(_ sender: Any) {
+        let vc = UIActivityViewController(activityItems: [alertAdviceLabel.text], applicationActivities: nil)
+        vc.popoverPresentationController?.sourceView = self.view
+        self.present(vc, animated: true, completion: nil)
+    }
     @IBAction func closeAlert(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-  
     @IBOutlet weak var alertAdviceLabel: UILabel!
     
     override func viewDidLoad() {
@@ -23,13 +27,11 @@ class ViewControllerAlert: UIViewController {
         alertAdviceLabel.text = alertAdvice
         // Do any additional setup after loading the view.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

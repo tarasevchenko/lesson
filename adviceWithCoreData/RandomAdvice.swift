@@ -1,3 +1,7 @@
+//  Created by Тарас Евченко on 12.09.17.
+//  Copyright © 2017 Тарас Евченко. All rights reserved.
+//
+
 import Foundation
 import RealmSwift
 import UIKit
@@ -5,14 +9,14 @@ import UIKit
 
 class RandomAdvice {
     var advices: [Advice] = [Advice]()
-        func loadAdvices(completion:@escaping (Array<Advice>)->(Void))
-        {
+    func loadAdvices(completion:@escaping (Array<Advice>)->(Void)){
+        
             let urlString = "http://fucking-great-advice.ru/api/latest/5"
             guard let url = URL(string: urlString) else {
-            completion([Advice]())
+                completion([Advice]())
             return
-        }
-        
+            }
+
             URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let unwrappedData = data else {return}
             do {
@@ -26,8 +30,7 @@ class RandomAdvice {
                         let stat = jsonAdvice["stat"] as? String
                         let sound = jsonAdvice["sound"] as? String
                         
-                        if let Id = id, let Text = text, let Stat = stat, let Sound = sound
-                        {
+                        if let Id = id, let Text = text, let Stat = stat, let Sound = sound {
                             let Id = Id as String, Text = Text.replacingOccurrences(of: "&nbsp;", with: " ") as String, Stat = Stat as String, Sound = Sound as String
                             advices.append(Advice(id: Id, text: Text, stat: Stat, sound: Sound))
                             

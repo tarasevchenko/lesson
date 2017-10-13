@@ -19,8 +19,6 @@ struct Advice {
     let sound: String
 }
 
-
-
 class AdviceRealm: Object,Mappable{
     @objc dynamic var id = ""
     @objc dynamic var text = ""
