@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBAction func randomButtonAdvice(_ sender: UIButton) {
         if Reachability().isInternetAvailable() == true {
+           
             let adviceNew = RandomAdvice()
             let adviceRandom = adviceNew.randomAdviceInternet()
             adviceLabel.text = adviceRandom

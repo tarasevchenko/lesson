@@ -11,7 +11,6 @@
 		A10561861F6FB7760016E551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561851F6FB7760016E551 /* AppDelegate.swift */; };
 		A10561881F6FB7760016E551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561871F6FB7760016E551 /* ViewController.swift */; };
 		A105618B1F6FB7760016E551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10561891F6FB7760016E551 /* Main.storyboard */; };
-		A105618E1F6FB7760016E551 /* adviceWithCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A105618C1F6FB7760016E551 /* adviceWithCoreData.xcdatamodeld */; };
 		A10561901F6FB7760016E551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A105618F1F6FB7760016E551 /* Assets.xcassets */; };
 		A10561931F6FB7760016E551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10561911F6FB7760016E551 /* LaunchScreen.storyboard */; };
 		A105619E1F6FB7760016E551 /* adviceWithCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105619D1F6FB7760016E551 /* adviceWithCoreDataTests.swift */; };
@@ -24,6 +23,7 @@
 		A10561C91F70FAD80016E551 /* MyAdviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561C81F70FAD80016E551 /* MyAdviceTableViewCell.swift */; };
 		A10561D31F7113BB0016E551 /* ViewControllerAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561D21F7113BB0016E551 /* ViewControllerAlert.swift */; };
 		A132175D1F8F7B160048B1F6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132175C1F8F7B160048B1F6 /* Reachability.swift */; };
+		A1ABB60C1F91793200E57B61 /* Монтажная область 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ABB60B1F91793200E57B61 /* Монтажная область 1.png */; };
 		A1CBD1011F7FC3B800FAFAC6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A1CBD1001F7FC3B800FAFAC6 /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +52,6 @@
 		A10561851F6FB7760016E551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A10561871F6FB7760016E551 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A105618A1F6FB7760016E551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A105618D1F6FB7760016E551 /* adviceWithCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = adviceWithCoreData.xcdatamodel; sourceTree = "<group>"; };
 		A105618F1F6FB7760016E551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A10561921F6FB7760016E551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A10561941F6FB7760016E551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		A10561C81F70FAD80016E551 /* MyAdviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAdviceTableViewCell.swift; sourceTree = "<group>"; };
 		A10561D21F7113BB0016E551 /* ViewControllerAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAlert.swift; sourceTree = "<group>"; };
 		A132175C1F8F7B160048B1F6 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A1ABB60B1F91793200E57B61 /* Монтажная область 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Монтажная область 1.png"; sourceTree = "<group>"; };
 		A1CBD1001F7FC3B800FAFAC6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -148,9 +148,9 @@
 				A10561851F6FB7760016E551 /* AppDelegate.swift */,
 				A10561891F6FB7760016E551 /* Main.storyboard */,
 				A105618F1F6FB7760016E551 /* Assets.xcassets */,
+				A1ABB60B1F91793200E57B61 /* Монтажная область 1.png */,
 				A10561911F6FB7760016E551 /* LaunchScreen.storyboard */,
 				A10561941F6FB7760016E551 /* Info.plist */,
-				A105618C1F6FB7760016E551 /* adviceWithCoreData.xcdatamodeld */,
 			);
 			path = adviceWithCoreData;
 			sourceTree = "<group>";
@@ -318,6 +318,7 @@
 				A1CBD1011F7FC3B800FAFAC6 /* Podfile in Resources */,
 				A10561931F6FB7760016E551 /* LaunchScreen.storyboard in Resources */,
 				A10561901F6FB7760016E551 /* Assets.xcassets in Resources */,
+				A1ABB60C1F91793200E57B61 /* Монтажная область 1.png in Resources */,
 				A105618B1F6FB7760016E551 /* Main.storyboard in Resources */,
 				A10561C01F6FCA690016E551 /* advices.json in Resources */,
 			);
@@ -412,7 +413,6 @@
 				A10561BF1F6FCA690016E551 /* adviceModel.swift in Sources */,
 				A10561861F6FB7760016E551 /* AppDelegate.swift in Sources */,
 				A10561C11F6FCA690016E551 /* RandomAdvice.swift in Sources */,
-				A105618E1F6FB7760016E551 /* adviceWithCoreData.xcdatamodeld in Sources */,
 				A10561D31F7113BB0016E551 /* ViewControllerAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -699,19 +699,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		A105618C1F6FB7760016E551 /* adviceWithCoreData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A105618D1F6FB7760016E551 /* adviceWithCoreData.xcdatamodel */,
-			);
-			currentVersion = A105618D1F6FB7760016E551 /* adviceWithCoreData.xcdatamodel */;
-			path = adviceWithCoreData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A105617A1F6FB7750016E551 /* Project object */;
 }
