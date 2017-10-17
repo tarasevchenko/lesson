@@ -5,14 +5,14 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Futura.ttc">
-            <string>Futura-Medium</string>
+        <array key="Verdana.ttf">
+            <string>Verdana</string>
         </array>
     </customFonts>
     <scenes>
@@ -123,7 +123,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aud-yK-AkF">
-                                <rect key="frame" x="102" y="420" width="176" height="30"/>
+                                <rect key="frame" x="127" y="420" width="151" height="30"/>
                                 <state key="normal" title="Добавить свой совет">
                                     <color key="titleColor" red="1" green="0.67230056400000004" blue="0.45089128160000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -131,21 +131,38 @@
                                     <action selector="saveUserAdvice:" destination="SPd-eM-TqP" eventType="touchUpInside" id="NUF-U7-6w9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сохранять в базу?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COH-RG-ifL">
+                                <rect key="frame" x="36" y="513" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LnM-qM-jGi">
+                                <rect key="frame" x="240" y="508" width="51" height="31"/>
+                                <connections>
+                                    <action selector="saveToBaseOrNot:" destination="SPd-eM-TqP" eventType="valueChanged" id="kpP-ji-FoQ"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="COH-RG-ifL" firstAttribute="leading" secondItem="a2Y-hh-LHt" secondAttribute="leading" constant="36" id="BPc-IK-4ek"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JoI-Fw-olT" secondAttribute="trailing" constant="48" id="BQN-tm-MMG"/>
                             <constraint firstItem="9Tg-PT-KmC" firstAttribute="top" secondItem="0wk-qE-lTf" secondAttribute="bottom" constant="262" id="EmB-Ds-MBj"/>
                             <constraint firstItem="0wk-qE-lTf" firstAttribute="leading" secondItem="a2Y-hh-LHt" secondAttribute="leadingMargin" constant="10" id="J3e-Ze-Odv"/>
+                            <constraint firstAttribute="trailing" secondItem="LnM-qM-jGi" secondAttribute="trailing" constant="86" id="Jdk-1h-YWe"/>
                             <constraint firstItem="0wk-qE-lTf" firstAttribute="centerY" secondItem="a2Y-hh-LHt" secondAttribute="centerY" id="K72-0h-Gns"/>
                             <constraint firstItem="Aud-yK-AkF" firstAttribute="top" secondItem="JoI-Fw-olT" secondAttribute="bottom" constant="86" id="Lez-p2-Q3j"/>
                             <constraint firstItem="JoI-Fw-olT" firstAttribute="leading" secondItem="a2Y-hh-LHt" secondAttribute="leadingMargin" constant="64" id="V2t-UM-v9A"/>
-                            <constraint firstItem="Aud-yK-AkF" firstAttribute="leading" secondItem="a2Y-hh-LHt" secondAttribute="leadingMargin" constant="86" id="apv-Cz-XdU"/>
+                            <constraint firstItem="Aud-yK-AkF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="a2Y-hh-LHt" secondAttribute="leadingMargin" id="apv-Cz-XdU"/>
+                            <constraint firstItem="LnM-qM-jGi" firstAttribute="top" secondItem="Aud-yK-AkF" secondAttribute="bottom" constant="58" id="cBQ-wq-n2J"/>
                             <constraint firstItem="0wk-qE-lTf" firstAttribute="bottom" secondItem="L84-cq-xfe" secondAttribute="bottom" id="dPo-Rm-oxl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="L84-cq-xfe" secondAttribute="trailing" constant="-6" id="hdR-Lt-0BM"/>
                             <constraint firstItem="0wk-qE-lTf" firstAttribute="top" secondItem="L84-cq-xfe" secondAttribute="top" id="jnR-BL-PxW"/>
+                            <constraint firstItem="LnM-qM-jGi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="COH-RG-ifL" secondAttribute="trailing" constant="8" symbolic="YES" id="lcx-vl-65p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Aud-yK-AkF" secondAttribute="trailing" constant="81" id="q1a-dn-9f5"/>
+                            <constraint firstItem="COH-RG-ifL" firstAttribute="top" secondItem="Aud-yK-AkF" secondAttribute="bottom" constant="63" id="qJV-G8-PwC"/>
                             <constraint firstItem="0wk-qE-lTf" firstAttribute="centerY" secondItem="JoI-Fw-olT" secondAttribute="centerY" id="zT9-w9-uwn"/>
                         </constraints>
                     </view>
@@ -250,8 +267,8 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="adviceCells" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lL6-k6-tU1">
                                                     <rect key="frame" x="0.0" y="8" width="375" height="48"/>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                                    <color key="textColor" red="0.49732114174472597" green="0.68698445431472077" blue="0.63481325678945488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <color key="shadowColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </label>

@@ -9,11 +9,11 @@ import UIKit
 
 class RandomAdvice {
     var advices: [Advice] = [Advice]()
-    func loadAdvices(completion:@escaping (Array<Advice>)->(Void)){
+    func loadAdvices(completion:@escaping ([String:Any])->(Void)){
         
             let urlString = "http://fucking-great-advice.ru/api/random"
             guard let url = URL(string: urlString) else {
-                completion([Advice]())
+                
             return
             }
 
@@ -22,37 +22,16 @@ class RandomAdvice {
             do {
                 if  let jsonData =  try? JSONSerialization.jsonObject(with: unwrappedData) as? [String: Any] //серриализация данных
                 {
-                    var advices = [Advice]()
-                    
-                        let id = jsonData!["id"] as? String
-                        let text = jsonData!["text"] as? String
-                        let sound = jsonData!["sound"] as? String
-                        
-                        if let Id = id, let Text = text, let Sound = sound {
-                            let Id = Id as String, Text = Text.replacingOccurrences(of: "&nbsp;", with: " ") as String, Sound = Sound as String
-                            advices.append(Advice(id: Id, text: Text, sound: Sound))
-                            
-                            let realm = try! Realm()      //запись в realm
-                            try! realm.write ({
-                                let saveRealm = AdviceRealm()
-                                saveRealm.id = Id
-                                saveRealm.text = Text
-                                saveRealm.sound = Sound
-                                realm.add(saveRealm)
-                            })
-                            
-                            
-                        }
-                        
-                    
-                    completion(advices)
+                    completion(jsonData!)
                 }
                 
             }
             }.resume()
     }
     
-    func randomAdviceInternet() -> String {
+    
+    
+    func randomAdviceFromBase() -> String {
         let realm = try! Realm()
         let text = realm.objects(AdviceRealm.self)
         let textCount = realm.objects(AdviceRealm.self).count
@@ -61,9 +40,8 @@ class RandomAdvice {
             let adviceRandom = randomText.text
             return adviceRandom
         } else {
-            
-            randomAdviceFavourites()
-            return ("from Favourites")
+          
+            return (randomAdviceFavourites())
         }
         
     }

@@ -9,6 +9,8 @@ import UserNotifications
 
 class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     
+    var saveOrNot : Bool = false
+
     @IBOutlet weak var adviceLabel: UILabel!
     @IBOutlet weak var adviceButton: UIButton!
     
@@ -17,10 +19,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         
         present(viewControllerUserAdvice, animated: true, completion: nil)
 
-        
     }
-    
-
     
    func localPush () {
     let action1 = UNNotificationAction(identifier: "action1", title: "дай совет!", options: UNNotificationActionOptions.foreground)
@@ -39,14 +38,12 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     
     
     
-    
-    
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         if response.actionIdentifier == "action1"{
             if Reachability().isInternetAvailable() == true {
                 
                 let adviceNew = RandomAdvice()
-                let adviceRandom = adviceNew.randomAdviceInternet()
+                let adviceRandom = adviceNew.randomAdviceFromBase()
                 adviceLabel.text = adviceRandom
             } else {
                 let adviceNew = RandomAdvice()
@@ -62,17 +59,63 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         completionHandler()
         }
     
+    @IBAction func saveToBaseOrNot(_ sender: UISwitch) {
+        
+        if sender.isOn {
+            saveOrNot = true
+        } else {
+            saveOrNot = false
+        }
+    }
     
     @IBAction func randomButtonAdvice(_ sender: UIButton) {
         
-                if Reachability().isInternetAvailable() == true {
+        if Reachability().isInternetAvailable() == true {
 
-            let adviceNew = RandomAdvice()
-            let adviceRandom = adviceNew.randomAdviceInternet()
-            adviceLabel.text = adviceRandom
+            if saveOrNot == true {
+            RandomAdvice().loadAdvices(completion: { (jsonData) -> (Void) in
+                let id = jsonData["id"] as? String
+                let text = jsonData["text"] as? String
+                let sound = jsonData["sound"] as? String
+                
+                if let Id = id, let Text = text, let Sound = sound {
+                    let Id = Id as String, Text = Text.replacingOccurrences(of: "&nbsp;", with: " ") as String, Sound = Sound as String
+                    
+                    let realm = try! Realm()      //запись в realm
+                    try! realm.write ({
+                        let saveRealm = AdviceRealm()
+                        saveRealm.id = Id
+                        saveRealm.text = Text
+                        saveRealm.sound = Sound
+                        realm.add(saveRealm)
+                    })
+                    
+                    
+                }
+                
+                DispatchQueue.main.async {
+                    
+                    self.adviceLabel.text = text?.replacingOccurrences(of: "&nbsp;", with: " ")
+                }
+            })
+            } else {
+                RandomAdvice().loadAdvices(completion: { (jsonData) -> (Void) in
+                    let text = jsonData["text"] as? String
+                    
+                    
+                    DispatchQueue.main.async {
+                        
+                        self.adviceLabel.text = text?.replacingOccurrences(of: "&nbsp;", with: " ")
+                    }
+                })
+            }
+        
+        
+        
+        
         } else {
                 let adviceNew = RandomAdvice()
-                let adviceRandom = adviceNew.randomAdviceFavourites()
+                let adviceRandom = adviceNew.randomAdviceFromBase()
                 adviceLabel.text = adviceRandom
 
           }
@@ -96,13 +139,18 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         UNUserNotificationCenter.current().delegate = self
         
         if Reachability().isInternetAvailable() == true {
-                RandomAdvice().loadAdvices(completion: { (advices) -> (Void) in
+                RandomAdvice().loadAdvices(completion: { (jsonData) -> (Void) in
+                    let text = jsonData["text"] as? String
+                    
+                    
                     DispatchQueue.main.async {
-                        self.adviceLabel.text = RandomAdvice().randomAdviceInternet()
+                        
+                        self.adviceLabel.text = text?.replacingOccurrences(of: "&nbsp;", with: " ")
                     }
                 })
-        } else {
-                RandomAdvice().loadAdvices(completion: { (advices) -> (Void) in
+        }
+        else {
+                RandomAdvice().loadAdvices(completion: { (jsonData) -> (Void) in
                 DispatchQueue.main.async {
                     self.adviceLabel.text = RandomAdvice().randomAdviceFavourites()
                 }
@@ -122,3 +170,4 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     
     
 }
+
