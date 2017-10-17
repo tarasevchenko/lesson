@@ -12,7 +12,8 @@ class ViewControllerAlert: UIViewController {
     var alertAdvice = ""
     
     @IBAction func share(_ sender: Any) {
-        let vc = UIActivityViewController(activityItems: [alertAdviceLabel.text], applicationActivities: nil)
+        let preambula = "Делюсь с тобой советом - "
+        let vc = UIActivityViewController(activityItems: ([preambula]+[alertAdviceLabel.text]), applicationActivities: nil)
         vc.popoverPresentationController?.sourceView = self.view
         self.present(vc, animated: true, completion: nil)
     }

@@ -17,7 +17,7 @@
                BlueprintIdentifier = "A10561811F6FB7760016E551"
                BuildableName = "adviceWithCoreData.app"
                BlueprintName = "adviceWithCoreData"
-               ReferencedContainer = "container:adviceWithCoreData.xcodeproj">
+               ReferencedContainer = "container:Advice To You.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,7 +36,7 @@
                BlueprintIdentifier = "A10561981F6FB7760016E551"
                BuildableName = "adviceWithCoreDataTests.xctest"
                BlueprintName = "adviceWithCoreDataTests"
-               ReferencedContainer = "container:adviceWithCoreData.xcodeproj">
+               ReferencedContainer = "container:Advice To You.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,7 +46,7 @@
                BlueprintIdentifier = "A10561A31F6FB7760016E551"
                BuildableName = "adviceWithCoreDataUITests.xctest"
                BlueprintName = "adviceWithCoreDataUITests"
-               ReferencedContainer = "container:adviceWithCoreData.xcodeproj">
+               ReferencedContainer = "container:Advice To You.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -56,7 +56,7 @@
             BlueprintIdentifier = "A10561811F6FB7760016E551"
             BuildableName = "adviceWithCoreData.app"
             BlueprintName = "adviceWithCoreData"
-            ReferencedContainer = "container:adviceWithCoreData.xcodeproj">
+            ReferencedContainer = "container:Advice To You.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,7 +80,7 @@
             BlueprintIdentifier = "A10561811F6FB7760016E551"
             BuildableName = "adviceWithCoreData.app"
             BlueprintName = "adviceWithCoreData"
-            ReferencedContainer = "container:adviceWithCoreData.xcodeproj">
+            ReferencedContainer = "container:Advice To You.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -99,7 +99,7 @@
             BlueprintIdentifier = "A10561811F6FB7760016E551"
             BuildableName = "adviceWithCoreData.app"
             BlueprintName = "adviceWithCoreData"
-            ReferencedContainer = "container:adviceWithCoreData.xcodeproj">
+            ReferencedContainer = "container:Advice To You.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

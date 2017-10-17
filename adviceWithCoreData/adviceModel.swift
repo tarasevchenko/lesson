@@ -15,7 +15,6 @@ import ObjectMapper
 struct Advice {
     let id: String
     let text: String
-    let stat: String
     let sound: String
 }
 

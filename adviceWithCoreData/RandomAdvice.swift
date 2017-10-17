@@ -11,7 +11,7 @@ class RandomAdvice {
     var advices: [Advice] = [Advice]()
     func loadAdvices(completion:@escaping (Array<Advice>)->(Void)){
         
-            let urlString = "http://fucking-great-advice.ru/api/latest/5"
+            let urlString = "http://fucking-great-advice.ru/api/random"
             guard let url = URL(string: urlString) else {
                 completion([Advice]())
             return
@@ -20,26 +20,23 @@ class RandomAdvice {
             URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let unwrappedData = data else {return}
             do {
-                if  let jsonData =  try? JSONSerialization.jsonObject(with: unwrappedData) as? [[String: Any]] //серриализация данных
+                if  let jsonData =  try? JSONSerialization.jsonObject(with: unwrappedData) as? [String: Any] //серриализация данных
                 {
                     var advices = [Advice]()
-                    for var jsonAdvice in jsonData! //поиск ключей в данных
-                    {
-                        let id = jsonAdvice["id"] as? String
-                        let text = jsonAdvice["text"] as? String
-                        let stat = jsonAdvice["stat"] as? String
-                        let sound = jsonAdvice["sound"] as? String
+                    
+                        let id = jsonData!["id"] as? String
+                        let text = jsonData!["text"] as? String
+                        let sound = jsonData!["sound"] as? String
                         
-                        if let Id = id, let Text = text, let Stat = stat, let Sound = sound {
-                            let Id = Id as String, Text = Text.replacingOccurrences(of: "&nbsp;", with: " ") as String, Stat = Stat as String, Sound = Sound as String
-                            advices.append(Advice(id: Id, text: Text, stat: Stat, sound: Sound))
+                        if let Id = id, let Text = text, let Sound = sound {
+                            let Id = Id as String, Text = Text.replacingOccurrences(of: "&nbsp;", with: " ") as String, Sound = Sound as String
+                            advices.append(Advice(id: Id, text: Text, sound: Sound))
                             
                             let realm = try! Realm()      //запись в realm
                             try! realm.write ({
                                 let saveRealm = AdviceRealm()
                                 saveRealm.id = Id
                                 saveRealm.text = Text
-                                saveRealm.stat = Stat
                                 saveRealm.sound = Sound
                                 realm.add(saveRealm)
                             })
@@ -47,7 +44,7 @@ class RandomAdvice {
                             
                         }
                         
-                    }
+                    
                     completion(advices)
                 }
                 

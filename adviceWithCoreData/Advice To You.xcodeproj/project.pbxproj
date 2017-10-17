@@ -22,6 +22,7 @@
 		A10561C41F6FCA690016E551 /* ViewControllerSaveAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561BE1F6FCA690016E551 /* ViewControllerSaveAdvice.swift */; };
 		A10561C91F70FAD80016E551 /* MyAdviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561C81F70FAD80016E551 /* MyAdviceTableViewCell.swift */; };
 		A10561D31F7113BB0016E551 /* ViewControllerAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561D21F7113BB0016E551 /* ViewControllerAlert.swift */; };
+		A13029BE1F94D1FF00C4E2C2 /* ViewControllerUserAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13029BD1F94D1FF00C4E2C2 /* ViewControllerUserAdvice.swift */; };
 		A132175D1F8F7B160048B1F6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132175C1F8F7B160048B1F6 /* Reachability.swift */; };
 		A1ABB60C1F91793200E57B61 /* Монтажная область 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ABB60B1F91793200E57B61 /* Монтажная область 1.png */; };
 		A1CBD1011F7FC3B800FAFAC6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A1CBD1001F7FC3B800FAFAC6 /* Podfile */; };
@@ -68,6 +69,7 @@
 		A10561BE1F6FCA690016E551 /* ViewControllerSaveAdvice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerSaveAdvice.swift; path = ../ViewControllerSaveAdvice.swift; sourceTree = "<group>"; };
 		A10561C81F70FAD80016E551 /* MyAdviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAdviceTableViewCell.swift; sourceTree = "<group>"; };
 		A10561D21F7113BB0016E551 /* ViewControllerAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAlert.swift; sourceTree = "<group>"; };
+		A13029BD1F94D1FF00C4E2C2 /* ViewControllerUserAdvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUserAdvice.swift; sourceTree = "<group>"; };
 		A132175C1F8F7B160048B1F6 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A1ABB60B1F91793200E57B61 /* Монтажная область 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Монтажная область 1.png"; sourceTree = "<group>"; };
 		A1CBD1001F7FC3B800FAFAC6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -102,6 +104,7 @@
 		02C37918E3FCE3E10CBD6184 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				A10561BA1F6FCA690016E551 /* advices.json */,
 				5B8EBE724824C976C28FE060 /* Pods-adviceWithCoreData.debug.xcconfig */,
 				2F58F111E6B54DF40D1EAC8F /* Pods-adviceWithCoreData.release.xcconfig */,
 			);
@@ -126,7 +129,6 @@
 				A105619C1F6FB7760016E551 /* adviceWithCoreDataTests */,
 				A10561A71F6FB7760016E551 /* adviceWithCoreDataUITests */,
 				A10561831F6FB7760016E551 /* Products */,
-				A10561BA1F6FCA690016E551 /* advices.json */,
 				02C37918E3FCE3E10CBD6184 /* Pods */,
 				47AF6AB75E0644EE8A0660AC /* Frameworks */,
 			);
@@ -176,6 +178,7 @@
 		A10561C51F6FCA940016E551 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A13029BD1F94D1FF00C4E2C2 /* ViewControllerUserAdvice.swift */,
 				A10561BE1F6FCA690016E551 /* ViewControllerSaveAdvice.swift */,
 				A10561D21F7113BB0016E551 /* ViewControllerAlert.swift */,
 				A10561BD1F6FCA690016E551 /* ViewControllerFavoritesAdvice.swift */,
@@ -290,7 +293,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A105617D1F6FB7750016E551 /* Build configuration list for PBXProject "adviceWithCoreData" */;
+			buildConfigurationList = A105617D1F6FB7750016E551 /* Build configuration list for PBXProject "Advice To You" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -406,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10561C31F6FCA690016E551 /* ViewControllerFavoritesAdvice.swift in Sources */,
+				A13029BE1F94D1FF00C4E2C2 /* ViewControllerUserAdvice.swift in Sources */,
 				A132175D1F8F7B160048B1F6 /* Reachability.swift in Sources */,
 				A10561881F6FB7760016E551 /* ViewController.swift in Sources */,
 				A10561C41F6FCA690016E551 /* ViewControllerSaveAdvice.swift in Sources */,
@@ -662,7 +666,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A105617D1F6FB7750016E551 /* Build configuration list for PBXProject "adviceWithCoreData" */ = {
+		A105617D1F6FB7750016E551 /* Build configuration list for PBXProject "Advice To You" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A10561AB1F6FB7760016E551 /* Debug */,
