@@ -25,7 +25,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     let action1 = UNNotificationAction(identifier: "action1", title: "дай совет!", options: UNNotificationActionOptions.foreground)
     let content = UNMutableNotificationContent()
     content.title = "Получи совет, Блять"
-    content.subtitle = "Иначе пиздец!"
+    content.subtitle = "Пора уже!"
     content.body = "Давненько не советовался!"
     content.categoryIdentifier = "myCategory"
     content.badge = 1
@@ -57,6 +57,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
                 print("error")
             }
         completionHandler()
+        
         }
     
     @IBAction func saveToBaseOrNot(_ sender: UISwitch) {
@@ -134,6 +135,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in })
         UNUserNotificationCenter.current().delegate = self

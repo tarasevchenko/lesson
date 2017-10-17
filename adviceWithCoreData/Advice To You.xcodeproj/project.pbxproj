@@ -11,7 +11,6 @@
 		A10561861F6FB7760016E551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561851F6FB7760016E551 /* AppDelegate.swift */; };
 		A10561881F6FB7760016E551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561871F6FB7760016E551 /* ViewController.swift */; };
 		A105618B1F6FB7760016E551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10561891F6FB7760016E551 /* Main.storyboard */; };
-		A10561901F6FB7760016E551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A105618F1F6FB7760016E551 /* Assets.xcassets */; };
 		A10561931F6FB7760016E551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10561911F6FB7760016E551 /* LaunchScreen.storyboard */; };
 		A105619E1F6FB7760016E551 /* adviceWithCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105619D1F6FB7760016E551 /* adviceWithCoreDataTests.swift */; };
 		A10561A91F6FB7760016E551 /* adviceWithCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561A81F6FB7760016E551 /* adviceWithCoreDataUITests.swift */; };
@@ -25,6 +24,7 @@
 		A13029BE1F94D1FF00C4E2C2 /* ViewControllerUserAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13029BD1F94D1FF00C4E2C2 /* ViewControllerUserAdvice.swift */; };
 		A132175D1F8F7B160048B1F6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132175C1F8F7B160048B1F6 /* Reachability.swift */; };
 		A1ABB60C1F91793200E57B61 /* Монтажная область 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ABB60B1F91793200E57B61 /* Монтажная область 1.png */; };
+		A1C5991B1F9690E000131C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C5991A1F9690E000131C8D /* Assets.xcassets */; };
 		A1CBD1011F7FC3B800FAFAC6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A1CBD1001F7FC3B800FAFAC6 /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,6 @@
 		A10561851F6FB7760016E551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A10561871F6FB7760016E551 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A105618A1F6FB7760016E551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A105618F1F6FB7760016E551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A10561921F6FB7760016E551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A10561941F6FB7760016E551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A10561991F6FB7760016E551 /* adviceWithCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = adviceWithCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +71,7 @@
 		A13029BD1F94D1FF00C4E2C2 /* ViewControllerUserAdvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUserAdvice.swift; sourceTree = "<group>"; };
 		A132175C1F8F7B160048B1F6 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A1ABB60B1F91793200E57B61 /* Монтажная область 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Монтажная область 1.png"; sourceTree = "<group>"; };
+		A1C5991A1F9690E000131C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1CBD1001F7FC3B800FAFAC6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -122,6 +122,7 @@
 		A10561791F6FB7750016E551 = {
 			isa = PBXGroup;
 			children = (
+				A1C5991A1F9690E000131C8D /* Assets.xcassets */,
 				A10561C71F6FCABE0016E551 /* Services */,
 				A10561C51F6FCA940016E551 /* viewControllers */,
 				A10561C61F6FCAB30016E551 /* Models */,
@@ -149,7 +150,6 @@
 			children = (
 				A10561851F6FB7760016E551 /* AppDelegate.swift */,
 				A10561891F6FB7760016E551 /* Main.storyboard */,
-				A105618F1F6FB7760016E551 /* Assets.xcassets */,
 				A1ABB60B1F91793200E57B61 /* Монтажная область 1.png */,
 				A10561911F6FB7760016E551 /* LaunchScreen.storyboard */,
 				A10561941F6FB7760016E551 /* Info.plist */,
@@ -320,9 +320,9 @@
 			files = (
 				A1CBD1011F7FC3B800FAFAC6 /* Podfile in Resources */,
 				A10561931F6FB7760016E551 /* LaunchScreen.storyboard in Resources */,
-				A10561901F6FB7760016E551 /* Assets.xcassets in Resources */,
 				A1ABB60C1F91793200E57B61 /* Монтажная область 1.png in Resources */,
 				A105618B1F6FB7760016E551 /* Main.storyboard in Resources */,
+				A1C5991B1F9690E000131C8D /* Assets.xcassets in Resources */,
 				A10561C01F6FCA690016E551 /* advices.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
