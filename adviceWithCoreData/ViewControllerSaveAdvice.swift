@@ -18,10 +18,6 @@ class   ViewControllerTwo : UIViewController {
     @IBOutlet weak var labelFromVC1: UILabel!
     @IBOutlet weak var saveAlarm: UILabel!
     
-    @IBAction func closeFavourites(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-        
-        }
     
     @IBAction func saveAdviceToArray(_ sender: Any) {
         let realm = try! Realm()
@@ -35,7 +31,8 @@ class   ViewControllerTwo : UIViewController {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
                     self.saveAlarm.isHidden = true // скрытие labe
             })
-            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+             self.dismiss(animated: true, completion: nil)        })
                 }
     
         override func viewDidLoad() {
