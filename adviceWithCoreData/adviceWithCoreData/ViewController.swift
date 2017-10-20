@@ -9,8 +9,9 @@ import UserNotifications
 
 class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     
-    var saveOrNot : Bool = false
 
+    
+    
     @IBOutlet weak var adviceLabel: UILabel!
     @IBOutlet weak var adviceButton: UIButton!
     
@@ -60,19 +61,16 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         
         }
     
-    @IBAction func saveToBaseOrNot(_ sender: UISwitch) {
-        
-        if sender.isOn {
-            saveOrNot = true
-        } else {
-            saveOrNot = false
-        }
-    }
+
     
     @IBAction func randomButtonAdvice(_ sender: UIButton) {
         
         if Reachability().isInternetAvailable() == true {
-
+           let saveOrNot = Settings.settings.saveOrNot
+            
+            
+            print (saveOrNot)
+            
             if saveOrNot == true {
             RandomAdvice().loadAdvices(completion: { (jsonData) -> (Void) in
                 let id = jsonData["id"] as? String
@@ -80,7 +78,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
                 let sound = jsonData["sound"] as? String
                 
                 if let Id = id, let Text = text, let Sound = sound {
-                    let Id = Id as String, Text = Text.replacingOccurrences(of: "&nbsp;", with: " ") as String, Sound = Sound as String
+                    let Id = Id as String, Text = Text.replacingOccurrences(of: "&nbsp;&#151", with: " ") as String, Sound = Sound as String
                     
                     let realm = try! Realm()      //запись в realm
                     try! realm.write ({
@@ -159,7 +157,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
             })
         }
         
-        //print(Realm.Configuration.defaultConfiguration)
+        print(Realm.Configuration.defaultConfiguration)
       
           self.navigationItem.rightBarButtonItem = self.editButtonItem
         // Do any additional setup after loading the view, typically from a nib.

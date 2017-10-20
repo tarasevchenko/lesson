@@ -23,6 +23,7 @@
 		A10561D31F7113BB0016E551 /* ViewControllerAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10561D21F7113BB0016E551 /* ViewControllerAlert.swift */; };
 		A13029BE1F94D1FF00C4E2C2 /* ViewControllerUserAdvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13029BD1F94D1FF00C4E2C2 /* ViewControllerUserAdvice.swift */; };
 		A132175D1F8F7B160048B1F6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A132175C1F8F7B160048B1F6 /* Reachability.swift */; };
+		A18D15B31F9926030033640E /* ViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18D15B21F9926030033640E /* ViewControllerSettings.swift */; };
 		A1ABB60C1F91793200E57B61 /* Монтажная область 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ABB60B1F91793200E57B61 /* Монтажная область 1.png */; };
 		A1C5991B1F9690E000131C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C5991A1F9690E000131C8D /* Assets.xcassets */; };
 		A1CBD1011F7FC3B800FAFAC6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A1CBD1001F7FC3B800FAFAC6 /* Podfile */; };
@@ -70,6 +71,7 @@
 		A10561D21F7113BB0016E551 /* ViewControllerAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAlert.swift; sourceTree = "<group>"; };
 		A13029BD1F94D1FF00C4E2C2 /* ViewControllerUserAdvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUserAdvice.swift; sourceTree = "<group>"; };
 		A132175C1F8F7B160048B1F6 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A18D15B21F9926030033640E /* ViewControllerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSettings.swift; sourceTree = "<group>"; };
 		A1ABB60B1F91793200E57B61 /* Монтажная область 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Монтажная область 1.png"; sourceTree = "<group>"; };
 		A1C5991A1F9690E000131C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1CBD1001F7FC3B800FAFAC6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -180,6 +182,7 @@
 			children = (
 				A13029BD1F94D1FF00C4E2C2 /* ViewControllerUserAdvice.swift */,
 				A10561BE1F6FCA690016E551 /* ViewControllerSaveAdvice.swift */,
+				A18D15B21F9926030033640E /* ViewControllerSettings.swift */,
 				A10561D21F7113BB0016E551 /* ViewControllerAlert.swift */,
 				A10561BD1F6FCA690016E551 /* ViewControllerFavoritesAdvice.swift */,
 				A10561871F6FB7760016E551 /* ViewController.swift */,
@@ -416,6 +419,7 @@
 				A10561C91F70FAD80016E551 /* MyAdviceTableViewCell.swift in Sources */,
 				A10561BF1F6FCA690016E551 /* adviceModel.swift in Sources */,
 				A10561861F6FB7760016E551 /* AppDelegate.swift in Sources */,
+				A18D15B31F9926030033640E /* ViewControllerSettings.swift in Sources */,
 				A10561C11F6FCA690016E551 /* RandomAdvice.swift in Sources */,
 				A10561D31F7113BB0016E551 /* ViewControllerAlert.swift in Sources */,
 			);

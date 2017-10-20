@@ -11,9 +11,10 @@ class RandomAdvice {
     var advices: [Advice] = [Advice]()
     func loadAdvices(completion:@escaping ([String:Any])->(Void)){
         
-            let urlString = "http://fucking-great-advice.ru/api/random"
+            let urlString = Settings.settings.censored
+            print(urlString)
             guard let url = URL(string: urlString) else {
-                
+              
             return
             }
 
@@ -22,6 +23,7 @@ class RandomAdvice {
             do {
                 if  let jsonData =  try? JSONSerialization.jsonObject(with: unwrappedData) as? [String: Any] //серриализация данных
                 {
+                    print(jsonData!)
                     completion(jsonData!)
                 }
                 
